@@ -104,8 +104,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: inherit;
 }
 
-h1, .h1 { font-size: 100px; }
-h2, .h2 { font-size: 30px; }
+h1, .h1 { font-size: 100px; margin: .2em 0;}
+h2, .h2 { font-size: 60px; margin: .2em 0;}
 h3, .h3 { font-size: 24px; }
 h4, .h4 { font-size: 18px; }
 h5, .h5 { font-size: 14px; }
@@ -405,10 +405,10 @@ input[type='email'], input[type='telt'], input[type='colort'], textarea, select 
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #555;
-  background-color: #fff;
+  color: #282827;
+  background-color: #787877;
   background-image: none;
-  border: 1px solid #ccc;
+  border: 1px solid transparent;
   border-radius: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
@@ -435,7 +435,7 @@ input[type='timet']::-moz-placeholder, input[type='weekt']::-moz-placeholder,
 input[type='numbert']::-moz-placeholder, input[type='email']::-moz-placeholder,
 input[type='telt']::-moz-placeholder, input[type='colort']::-moz-placeholder,
 textarea::-moz-placeholder, select::-moz-placeholder {
-  color: #999;
+  color: #282827;
   opacity: 1;
 }
 input[type='text']:-ms-input-placeholder, input[type='password']:-ms-input-placeholder,
@@ -446,7 +446,7 @@ input[type='timet']:-ms-input-placeholder, input[type='weekt']:-ms-input-placeho
 input[type='numbert']:-ms-input-placeholder, input[type='email']:-ms-input-placeholder,
 input[type='telt']:-ms-input-placeholder, input[type='colort']:-ms-input-placeholder,
 textarea:-ms-input-placeholder, select:-ms-input-placeholder {
-  color: #999;
+  color: #282827;
 }
 input[type='text']::-webkit-input-placeholder, input[type='password']::-webkit-input-placeholder,
 input[type='search']::-webkit-input-placeholder, input[type='url']::-webkit-input-placeholder,
@@ -456,7 +456,7 @@ input[type='timet']::-webkit-input-placeholder, input[type='weekt']::-webkit-inp
 input[type='numbert']::-webkit-input-placeholder, input[type='email']::-webkit-input-placeholder,
 input[type='telt']::-webkit-input-placeholder, input[type='colort']::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
-  color: #999;
+  color: #282827;
 }
 input[type='text'][disabled], input[type='password'][disabled],
 input[type='search'][disabled], input[type='url'][disabled],
@@ -903,6 +903,14 @@ $black:  #282827;
 $black-hover: #000;
 $red: #be5055;
 $red-hover: #bd393f;
+$yellow: #d08837;
+$yellow-hover: #c17520;
+
+h3.x-separator {
+  margin: 0;
+  font-weight: bold;
+  font-size: 35px;
+}
 
 .red-button {
   background-color: $red;
@@ -921,6 +929,18 @@ $red-hover: #bd393f;
   background-color: $black-hover !important;
 }
 
+.white-button {
+  background-color: #fff;
+  color: $black;
+  font-weight: bold;
+  padding: 0px 5px;
+}
+
+.white-button:hover, .white-button:active {
+  background-color: lightgray;
+  color: $black;
+}
+
 #masthead {
   .hero-image{
     position: relative;
@@ -931,9 +951,23 @@ $red-hover: #bd393f;
     background-size: cover;
     background-attachment: fixed;
     background-image: url('../images/hero-image.jpg');
+    h1,h2, h3 {
+      color: #fff;
+    }
+    .copyright-product {
+      display: inline-block;
+      background-color: #311f1f;
+      color: #fff;
+      font-size: 24px;
+      padding: 5px 20px;
+    }
     .zum-shop-button {
-      width: 150px;
-      padding: 30px 5px 15px 5px;
+      padding: 0;
+      a{
+        display: block;
+        width: 150px;
+        padding: 30px 5px 15px 5px;
+      }
       .arrow{
         font-family: 'HDV', sans-serif;
         color: #fff;
@@ -968,15 +1002,67 @@ $red-hover: #bd393f;
           }
         }
         ul.nav {
+          .open > a{
+            background-color: $red-hover;
+          }
           li {
             margin-left: 10px;
             margin-right: 10px;
             a {
               color: #fff;
+              font-size: 20px;
             }
             ul.dropdown-menu{
               padding: 20px;
-              width: 300px;
+              color: #fff;
+              border-bottom: none;
+              border-left: none;
+              border-top: 2px solid transparent;
+              border-right: 2px solid transparent;
+              .divider {
+                margin-left: -20px;
+                margin-right: -20px;
+              }
+              &.red-drop {
+                background-color: rgba(190,80,85,0.9);
+                width: 100%;
+              }
+              &.black-drop{
+                background-color: rgba(40,40,39,0.9);
+                width: 100%;
+                min-width: 248px;
+              }
+              .drop-title {
+                display: block;
+                font-size: 12px;
+                &.forgot-pass-title {
+                  color: $red;
+                }
+                &.register-title {
+                  color: $yellow;
+                }
+              }
+              .item {
+                .item-price {
+                  float: right;
+                }
+              }
+              .drop-total {
+                display: block;
+                font-size: 20px;
+                font-weight: bold;
+              }
+              .black-button {
+                display: inline-block;
+                font-size: 20px;
+                font-weight: bold;
+                padding: 5px 15px;
+              }
+              .login-form {
+                input, button{
+                  margin-top: 5px;
+                }
+              }
             }
           }
         }
@@ -998,14 +1084,29 @@ $red-hover: #bd393f;
   body { background-image: url('/images/background-small.jpg'); }
 }
 @media (min-width: 768px) {
-   /* ... */
+   #masthead {
+     .hero-image {
+       .main-navigation-wrapper {
+         nav {
+           ul.nav {
+             li {
+               ul.dropdown-menu {
+                 &.black-drop {
+                   width:auto;
+                 }
+               }
+             }
+           }
+         }
+       }
+     }
+   }
 }
 @media (min-width: 992px) {
   .hero-image{
     .zum-shop-button {
       position: absolute;
       right: 20%;
-
     }
   }
 }
