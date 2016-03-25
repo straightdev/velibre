@@ -21,6 +21,17 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
    2. Base and utilities
  ===================================================*/
 
+ @font-face {
+     font-family: MinionPro;
+     src: url('../fonts/MinionPro-Regular.otf');
+ }
+
+ @font-face {
+     font-family: HDV;
+     src: url('../fonts/HVD Fonts - Brandon Printed One.ttf');
+ }
+
+
 /* Base */
 * {
   -webkit-box-sizing: border-box;
@@ -52,13 +63,14 @@ a {
   color:#0000EE;
   transition: color ease 0.3s;
   text-decoration:none;
+  cursor: pointer;
 }
 a:focus {
   outline: thin dotted;
   outline: 5px auto #0000EE;
   outline-offset: -2px;
 }
-a:hover, a:active, a:focus {text-decoration:underline;}
+a:hover, a:active, a:focus {text-decoration:none;}
 
 h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a, h6 a, .h6 a {
   color:#000;
@@ -71,6 +83,7 @@ h2 a:focus, .h2 a:focus, h3 a:focus, .h3 a:focus, h4 a:focus, .h4 a:focus,
 h5 a:focus, .h5 a:focus, h6 a:focus, .h6 a:focus {
   color:#0000EE;
   text-decoration:none;
+
 }
 
 p a {color:#0000EE;text-decoration:underline;}
@@ -85,21 +98,13 @@ hr {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: inherit;
+  font-family: 'HDV', sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
 }
-h1, .h1, h2, .h2, h3, .h3 {
-    font-family: 'PT Serif';
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-h4, .h4, h5, .h5, h6, .h6 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-h1, .h1 { font-size: 36px; }
+
+h1, .h1 { font-size: 100px; }
 h2, .h2 { font-size: 30px; }
 h3, .h3 { font-size: 24px; }
 h4, .h4 { font-size: 18px; }
@@ -894,9 +899,95 @@ a.badge:hover, .badge a:hover, a.badge:focus, .badge a:focus {
    3. Site layout
  ===================================================*/
 
-body {
-  background:#fff url('/images/background.jpg') no-repeat center center;
-  background-size: cover;
+$black:  #282827;
+$black-hover: #000;
+$red: #be5055;
+$red-hover: #bd393f;
+
+.red-button {
+  background-color: $red;
+  padding: 15px;
+}
+
+.red-button:hover, .red-button:active {
+  background-color: $red-hover !important;
+}
+
+.black-button {
+  background-color: $black;
+  padding: 15px;
+}
+.black-button:hover, .black-button:active {
+  background-color: $black-hover !important;
+}
+
+#masthead {
+  .hero-image{
+    position: relative;
+    height: 80vh;
+    min-height: 420px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('../images/hero-image.jpg');
+    .zum-shop-button {
+      width: 150px;
+      padding: 30px 5px 15px 5px;
+      .arrow{
+        font-family: 'HDV', sans-serif;
+        color: #fff;
+        font-size: 45px;
+      }
+      .link-text{
+        font-size: 20px;
+        color: #fff;
+      }
+    }
+    .logo-wrapper {
+      margin-top: 30px;
+      .logo {
+        font-family:'', sans-serif;
+        color: #fff;
+        background-color: $black;
+        font-size: 50px;
+      }
+    }
+    .main-navigation-wrapper {
+      margin-top: 30px;
+      nav{
+        background: none;
+        border: none;
+        .navbar-toggle {
+          background-color: #000;
+          color: #fff;
+          border: none;
+          border-radius: 0;
+          .icon-bar {
+            background-color: #fff;
+          }
+        }
+        ul.nav {
+          li {
+            margin-left: 10px;
+            margin-right: 10px;
+            a {
+              color: #fff;
+            }
+            ul.dropdown-menu{
+              padding: 20px;
+              width: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .quick-access{
+    background-color: red;
+    height:20vh
+  }
+
 }
 
 /*==================================================
@@ -910,7 +1001,13 @@ body {
    /* ... */
 }
 @media (min-width: 992px) {
-   /* ... */
+  .hero-image{
+    .zum-shop-button {
+      position: absolute;
+      right: 20%;
+
+    }
+  }
 }
 @media (min-width: 1200px) {
    /* ... */
