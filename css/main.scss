@@ -1187,6 +1187,32 @@ $purple-hover: #5b3b52;
   }
 }
 
+#screen4 {
+  h1 { margin:0; }
+  padding: 20px 0;
+  .screen-title { color: $black;}
+  .x-separator { color: $yellow; padding-bottom: 20px;}
+  .screen-content {
+    .screen2-link { color: $black; font-weight: normal;}
+  }
+}
+
+#footer {
+  text-align: left;
+  margin-bottom: 30px;
+  .bottom-menu1, .bottom-menu2 {
+    button {
+      padding: 5px 15px;
+    }
+  }
+  .colophon {
+    margin-top: 20px;
+    .colophon-info {
+      text-align: left;
+      p {margin:0;}
+    }
+  }
+}
 
 /*==================================================
    4. Media queries
