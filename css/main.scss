@@ -1146,14 +1146,46 @@ $purple-hover: #5b3b52;
 }
 
 #screen2 {
+  h1 { margin:0; }
   padding: 20px 0;
-  .screen-title { color: $purple; }
+  .screen-title { color: $purple;}
   .x-separator { color: $green; padding-bottom: 20px;}
   .screen-content {
     .screen2-link { color: $green; font-weight: bold;}
   }
 }
 
+#screen3 {
+  h1 { margin:0; }
+  padding: 20px 0;
+  .screen-title { color: $yellow; }
+  .x-separator { color: $yellow; padding-bottom: 20px;}
+  .screen-content{
+    text-align: left;
+    margin-left: 40%;
+    p { margin-bottom: 30px;}
+    .coffee-types {
+      .coffee-type {
+        font-family: 'HDV', sans-serif;
+      }
+      .lento { .coffee-type { color: $yellow; }}
+      .allegro { .coffee-type { color: $purple; }}
+      .concerto { .coffee-type { color: $green; }}
+      .presto { .coffee-type { color: $red; }}
+      .fortis { .coffee-type { color: $black; }}
+      i { color: #f4eadc; }
+      i.yellow-circle { color: $yellow; }
+      i.purple-circle { color: $purple; }
+      i.green-circle { color: $green; }
+      i.red-circle { color: $red; }
+      i.black-circle { color: $black; }
+      .circles:after {
+        content: "Lento";
+        position: absolute;;
+      }
+    }
+  }
+}
 
 
 /*==================================================
