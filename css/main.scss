@@ -911,14 +911,14 @@ $purple: #815374;
 $purple-hover: #5b3b52;
 
 
-.screen-arrow, .screen-arrow:visited{
+.screen-arrow a, .screen-arrow a:visited{
   font-size: 35px;
   font-weight: bold;
   font-family: 'HDV', sans-serif;
   color: $black;
 }
 
-.screen-arrow:hover, .screen-arrow:focus {
+.screen-arrow a:hover, .screen-arrow a:focus {
   color: $black-hover;
 }
 
@@ -1212,6 +1212,11 @@ $purple-hover: #5b3b52;
       p {margin:0;}
     }
   }
+}
+
+
+#zum-shop {
+  background-color: $black;
 }
 
 /*==================================================
