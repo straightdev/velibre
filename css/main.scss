@@ -910,6 +910,39 @@ $green-hover: #456a4d;
 $purple: #815374;
 $purple-hover: #5b3b52;
 
+.logo-wrapper {
+  margin-top: 30px;
+  .logo {
+    font-family:'', sans-serif;
+    color: #fff;
+    background-color: $black;
+    font-size: 50px;
+  }
+}
+
+.zum-shop-wrapper{
+  .zum-shop-button {
+    width:150px;
+    height: 180px;
+    padding: 0;
+    a{
+      display: block;
+      width: 100%;
+      padding: 10px 5px 15px 5px;
+    }
+    .arrow{
+      font-family: 'HDV', sans-serif;
+      color: #fff;
+      font-size: 45px;
+      line-height: 60px;
+    }
+    .link-text{
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+}
+
 
 .screen-arrow a, .screen-arrow a:visited{
   font-size: 35px;
@@ -963,6 +996,41 @@ $purple-hover: #5b3b52;
   color: $black;
 }
 
+.qty-form {
+  text-align: center;
+  padding: 5px;
+  margin: 2%;
+  line-height: 50px;
+  .qty {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      display: inline-block;
+      font-weight: bold;
+      font-family: 'HDV', sans-serif;
+      font-size: 22px;
+  }
+  input.qtyplus, input.qtyminus {
+     width:25px;
+     height:25px;
+     padding:0;
+     background: none;
+     font-weight: bold;
+     font-size: 24px;
+     line-height:1;
+   }
+}
+
+.qty-form.big {
+  .qty {
+    width:50px;
+    height: 50px;
+  }
+}
+
+
+
 #screen1 {
   .hero-image{
     position: relative;
@@ -983,32 +1051,8 @@ $purple-hover: #5b3b52;
       font-size: 24px;
       padding: 5px 20px;
     }
-    .zum-shop-button {
-      padding: 0;
-      a{
-        display: block;
-        width: 150px;
-        padding: 30px 5px 15px 5px;
-      }
-      .arrow{
-        font-family: 'HDV', sans-serif;
-        color: #fff;
-        font-size: 45px;
-      }
-      .link-text{
-        font-size: 20px;
-        color: #fff;
-      }
-    }
-    .logo-wrapper {
-      margin-top: 30px;
-      .logo {
-        font-family:'', sans-serif;
-        color: #fff;
-        background-color: $black;
-        font-size: 50px;
-      }
-    }
+
+
     .main-navigation-wrapper {
       margin-top: 30px;
       nav{
@@ -1216,7 +1260,90 @@ $purple-hover: #5b3b52;
 
 
 #zum-shop {
-  background-color: $black;
+  // display: none;
+  position: absolute;
+  top:0;
+  right:0;
+  left: 0;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.9);
+  color: #fff;
+  .oversized-container {width: 90%;}
+  h1, h2, h3, h4 {color: #fff;}
+  .zum-intro {
+    margin-top: 50px;
+  }
+  .zum-products {
+    margin-top: 30px;
+    .selection {
+      .product-type{
+        display: inline-block;
+        .title-description-wrapper{
+          position: relative;
+          text-align: right;
+          .product-description {
+            display: inline-block;;
+            width: 60%;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin: 0 30px 0 0;
+            position: relative;
+            &:after {
+              left: 100%;
+              top: 50%;
+              border: solid transparent;
+              content: " ";
+              height: 0;
+              width: 0;
+              position: absolute;
+              pointer-events: none;
+              border-color: rgba(136, 183, 213, 0);
+              border-left-color: $black;
+              border-width: 15px;
+              margin-top: -15px;
+            }
+          }
+          .product-title {
+            display: inline-block;;
+            width: auto;
+            float: right;
+            margin: 0;
+            padding: 9px;
+          }
+        }
+
+      }
+      .smallbox-qty {
+        border-right: 1px solid white;
+      }
+      .bigbox-qty {
+        border-right: 1px solid white;
+      }
+      .overview {
+        line-height:80px;
+        border-right: 1px solid white;
+        .overview-selected{
+          display: inline-block;
+          float: left;
+        }
+        .overview-total{
+          display: inline-block;
+          float: right;
+        }
+      }
+      .lento .product-description,
+      .lento .product-title  {background-color: $yellow;}
+      .lento .product-description:after {border-left-color: $yellow;}
+      .lento .qty-form .qty {background-color: $yellow;}
+    }
+    .cart-total {
+      .cart-total-title {
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+  }
+
 }
 
 /*==================================================
@@ -1246,11 +1373,10 @@ $purple-hover: #5b3b52;
    }
 }
 @media (min-width: 992px) {
-  .hero-image{
-    .zum-shop-button {
-      position: absolute;
-      right: 20%;
-    }
+
+  .zum-shop-button {
+    position: absolute;
+    right: 20%;
   }
 }
 @media (min-width: 1200px) {
