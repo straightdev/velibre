@@ -998,18 +998,19 @@ $purple-hover: #5b3b52;
 
 .qty-form {
   text-align: center;
-  padding: 5px;
-  margin: 2%;
-  line-height: 50px;
+  padding: 10px;
+  margin: 0;
+  line-height: 40px;
   .qty {
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
+      padding: 0;
       border-radius: 50%;
       text-align: center;
       display: inline-block;
       font-weight: bold;
       font-family: 'HDV', sans-serif;
-      font-size: 22px;
+      font-size: 16px;
   }
   input.qtyplus, input.qtyminus {
      width:25px;
@@ -1024,8 +1025,9 @@ $purple-hover: #5b3b52;
 
 .qty-form.big {
   .qty {
-    width:50px;
-    height: 50px;
+    width:40px;
+    height: 40px;
+    font-size: 24px;
   }
 }
 
@@ -1260,7 +1262,7 @@ $purple-hover: #5b3b52;
 
 
 #zum-shop {
-  // display: none;
+  display: none;
   position: absolute;
   top:0;
   right:0;
@@ -1333,8 +1335,34 @@ $purple-hover: #5b3b52;
       }
       .lento .product-description,
       .lento .product-title  {background-color: $yellow;}
-      .lento .product-description:after {border-left-color: $yellow;}
+      .lento .product-description:after {border-left-color: $yellow !important;}
       .lento .qty-form .qty {background-color: $yellow;}
+
+      .allegro .product-description,
+      .allegro .product-title  {background-color: $purple;}
+      .allegro .product-description:after {border-left-color: $purple !important;}
+      .allegro .qty-form .qty {background-color: $purple;}
+
+      .concerto .product-description,
+      .concerto .product-title  {background-color: $green;}
+      .concerto .product-description:after {border-left-color: $green !important;}
+      .concerto .qty-form .qty {background-color: $green;}
+
+      .presto .product-description,
+      .presto .product-title  {background-color: $red;}
+      .presto .product-description:after {border-left-color: $red !important;}
+      .presto .qty-form .qty {background-color: $red;}
+
+      .fortis .product-description,
+      .fortis .product-title  {background-color: $black;}
+      .fortis .product-description:after {border-left-color: $black !important;}
+      .fortis .qty-form .qty {background-color: #fff;}
+
+      .mix .product-description,
+      .mix .product-title  {background-color: #fff; color: $black;}
+      .mix .product-description:after {border-left-color: #fff !important;}
+      .mix .qty-form .qty {background-color: #fff;}
+
     }
     .cart-total {
       .cart-total-title {
