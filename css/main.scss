@@ -53,7 +53,7 @@ html {
 
 body {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height:1.8;
   color: #333;
   background-color: #fff;
@@ -86,7 +86,7 @@ h5 a:focus, .h5 a:focus, h6 a:focus, .h6 a:focus {
 
 }
 
-p a {color:#0000EE;text-decoration:underline;}
+p a {color:#0000EE;text-decoration:none;}
 p a:hover, p a:active, p a:focus {color:#000;}
 
 hr {
@@ -1145,7 +1145,14 @@ $purple-hover: #5b3b52;
   }
 }
 
-
+#screen2 {
+  padding: 20px 0;
+  .screen-title { color: $purple; }
+  .x-separator { color: $green; padding-bottom: 20px;}
+  .screen-content {
+    .screen2-link { color: $green; font-weight: bold;}
+  }
+}
 
 
 
@@ -1205,7 +1212,7 @@ $purple-hover: #5b3b52;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
   }
-  a, a:visited { text-decoration: underline; }
+  a, a:visited { text-decoration: none; }
   a[href]:after { content: " (" attr(href) ")";}
   abbr[title]:after { content: " (" attr(title) ")"; }
   a[href^="#"]:after, a[href^="javascript:"]:after { content: ""; }
