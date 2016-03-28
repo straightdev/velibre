@@ -106,8 +106,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 h1, .h1 { font-size: 100px; margin: .2em 0;}
 h2, .h2 { font-size: 60px; margin: .2em 0;}
-h3, .h3 { font-size: 24px; }
-h4, .h4 { font-size: 18px; }
+h3, .h3 { font-size: 35px; }
+h4, .h4 { font-size: 24px; }
 h5, .h5 { font-size: 14px; }
 h6, .h6 { font-size: 12px; }
 
@@ -905,11 +905,21 @@ $red: #be5055;
 $red-hover: #bd393f;
 $yellow: #d08837;
 $yellow-hover: #c17520;
+$green: #568460;
+$green-hover: #456a4d;
+$purple: #815374;
+$purple-hover: #5b3b52;
 
-h3.x-separator {
+.x-separator {
   margin: 0;
   font-weight: bold;
   font-size: 35px;
+}
+
+.x-separator-small {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .red-button {
@@ -917,7 +927,7 @@ h3.x-separator {
   padding: 15px;
 }
 
-.red-button:hover, .red-button:active {
+.red-button:hover, .red-button:active, .red-button:visited, .red-button:focus {
   background-color: $red-hover !important;
 }
 
@@ -925,7 +935,7 @@ h3.x-separator {
   background-color: $black;
   padding: 15px;
 }
-.black-button:hover, .black-button:active {
+.black-button:hover, .black-button:active, .black-button:visited, .black-button:focus {
   background-color: $black-hover !important;
 }
 
@@ -950,7 +960,7 @@ h3.x-separator {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-image: url('../images/hero-image.jpg');
+    background-image: url('../images/hero-image.JPG');
     h1,h2, h3 {
       color: #fff;
     }
@@ -1069,9 +1079,50 @@ h3.x-separator {
       }
     }
   }
-  .quick-access{
-    background-color: red;
-    height:20vh
+}
+
+#page {
+  #quick-access{
+    height:20vh;
+    padding: 20px 15px;
+    .quick-box {
+      text-align: center;
+      padding: 0;
+      .box-content {
+        border-right: 1px solid lightgray;
+      }
+      .box-content:first-child {
+        border-left: 1px solid lightgray;
+      }
+      &.box1 {
+        .x-separator-small { color: $red; }
+        .box-cta button { background-color: $red;}
+        .box-cta button:hover, .box-cta button:visited .box-cta button:active  {
+          background-color: $red-hover;
+        }
+      }
+      &.box2 {
+        .x-separator-small { color: $purple; }
+        .box-cta button { background-color: $purple;}
+        .box-cta button:hover, .box-cta button:visited .box-cta button:active  {
+          background-color: $purple-hover;
+        }
+      }
+      &.box3 {
+        .x-separator-small { color: $green; }
+        .box-cta button { background-color: $green;}
+        .box-cta button:hover, .box-cta button:visited .box-cta button:active  {
+          background-color: $green-hover;
+        }
+      }
+      &.box4 {
+        .x-separator-small { color: $yellow; }
+        .box-cta button { background-color: $yellow;}
+        .box-cta button:hover, .box-cta button:visited .box-cta button:active  {
+          background-color: $yellow;
+        }
+      }
+    }
   }
 
 }
