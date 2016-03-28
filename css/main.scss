@@ -104,8 +104,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: inherit;
 }
 
-h1, .h1 { font-size: 100px; margin: .2em 0;}
-h2, .h2 { font-size: 60px; margin: .2em 0;}
+h1, .h1 { font-size: 90px; margin: .2em 0;}
+h2, .h2 { font-size: 50px; margin: .2em 0;}
 h3, .h3 { font-size: 35px; }
 h4, .h4 { font-size: 24px; }
 h5, .h5 { font-size: 14px; }
@@ -910,6 +910,18 @@ $green-hover: #456a4d;
 $purple: #815374;
 $purple-hover: #5b3b52;
 
+
+.screen-arrow, .screen-arrow:visited{
+  font-size: 35px;
+  font-weight: bold;
+  font-family: 'HDV', sans-serif;
+  color: $black;
+}
+
+.screen-arrow:hover, .screen-arrow:focus {
+  color: $black-hover;
+}
+
 .x-separator {
   margin: 0;
   font-weight: bold;
@@ -922,20 +934,20 @@ $purple-hover: #5b3b52;
   font-size: 14px;
 }
 
-.red-button {
+.red-button, .red-button:visited {
   background-color: $red;
   padding: 15px;
 }
 
-.red-button:hover, .red-button:active, .red-button:visited, .red-button:focus {
+.red-button:hover, .red-button:active, .red-button:focus {
   background-color: $red-hover !important;
 }
 
-.black-button {
+.black-button, .black-button:visited {
   background-color: $black;
   padding: 15px;
 }
-.black-button:hover, .black-button:active, .black-button:visited, .black-button:focus {
+.black-button:hover, .black-button:active, .black-button:focus {
   background-color: $black-hover !important;
 }
 
@@ -951,10 +963,10 @@ $purple-hover: #5b3b52;
   color: $black;
 }
 
-#masthead {
+#screen1 {
   .hero-image{
     position: relative;
-    height: 80vh;
+    height: 75vh;
     min-height: 420px;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1003,7 +1015,7 @@ $purple-hover: #5b3b52;
         background: none;
         border: none;
         .navbar-toggle {
-          background-color: #000;
+          background-color: $black;
           color: #fff;
           border: none;
           border-radius: 0;
@@ -1079,53 +1091,63 @@ $purple-hover: #5b3b52;
       }
     }
   }
-}
-
-#page {
-  #quick-access{
-    height:20vh;
-    padding: 20px 15px;
-    .quick-box {
-      text-align: center;
-      padding: 0;
-      .box-content {
-        border-right: 1px solid lightgray;
-      }
-      .box-content:first-child {
-        border-left: 1px solid lightgray;
-      }
-      &.box1 {
-        .x-separator-small { color: $red; }
-        .box-cta button { background-color: $red;}
-        .box-cta button:hover, .box-cta button:visited .box-cta button:active  {
-          background-color: $red-hover;
+  .screen1-bottom {
+    height: 25vh;
+    #quick-access{
+      padding: 20px 15px;
+      .quick-box {
+        text-align: center;
+        padding: 0;
+        .box-content {
+          border-right: 1px solid lightgray;
         }
-      }
-      &.box2 {
-        .x-separator-small { color: $purple; }
-        .box-cta button { background-color: $purple;}
-        .box-cta button:hover, .box-cta button:visited .box-cta button:active  {
-          background-color: $purple-hover;
+        .box-content:first-child {
+          border-left: 1px solid lightgray;
         }
-      }
-      &.box3 {
-        .x-separator-small { color: $green; }
-        .box-cta button { background-color: $green;}
-        .box-cta button:hover, .box-cta button:visited .box-cta button:active  {
-          background-color: $green-hover;
+        &.box1 {
+          .x-separator-small { color: $red; }
+          .box-cta button { background-color: $red;}
+          .box-cta button:visited { background-color: $red;}
+          .box-cta button:hover, .box-cta button:active  {
+            background-color: $red-hover;
+          }
         }
-      }
-      &.box4 {
-        .x-separator-small { color: $yellow; }
-        .box-cta button { background-color: $yellow;}
-        .box-cta button:hover, .box-cta button:visited .box-cta button:active  {
-          background-color: $yellow;
+        &.box2 {
+          .x-separator-small { color: $purple; }
+          .box-cta button { background-color: $purple;}
+          .box-cta button:visited { background-color: $purple;}
+          .box-cta button:hover, .box-cta button:active  {
+            background-color: $purple-hover;
+          }
+        }
+        &.box3 {
+          .x-separator-small { color: $green; }
+          .box-cta button { background-color: $green;}
+          .box-cta button:visited { background-color: $green;}
+          .box-cta button:hover, .box-cta button:active  {
+            background-color: $green-hover;
+          }
+        }
+        &.box4 {
+          .x-separator-small { color: $yellow; }
+          .box-cta button { background-color: $yellow;}
+          .box-cta button:visited { background-color: $yellow;}
+          .box-cta button:hover, .box-cta button:active  {
+            background-color: $yellow-hover;
+          }
         }
       }
     }
+    #screen1-arrow {
+      color: #443332;
+      padding-bottom: 20px;
+    }
   }
-
 }
+
+
+
+
 
 /*==================================================
    4. Media queries
@@ -1135,7 +1157,7 @@ $purple-hover: #5b3b52;
   body { background-image: url('/images/background-small.jpg'); }
 }
 @media (min-width: 768px) {
-   #masthead {
+   #screen1 {
      .hero-image {
        .main-navigation-wrapper {
          nav {
