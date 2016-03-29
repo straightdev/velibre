@@ -20,77 +20,18 @@
 	});
 
   // zum shop open/close
-  $('#zum-open').on('click', function(e){
+  $('#zum-toggle').on('click', function(e){
     e.preventDefault();
-    $('#zum-shop').show();
+    if ($(this).hasClass('zum-hidden')){
+      $(this).removeClass('zum-hidden').addClass('zum-showed');
+      $('#zum-shop').fadeIn();
+    } else {
+      $(this).removeClass('zum-showed').addClass('zum-hidden');
+      $('#zum-shop').fadeOut();
+    }
+
   });
 
-  $('#zum-close').on('click', function(e){
-    e.preventDefault();
-    console.log("clicky clicky");
-    $('#zum-shop').hide();
-  });
-
-  // This button will increment the value
-    // $('.qtyplus').click(function(e){
-    //     // Stop acting like a button
-    //     e.preventDefault();
-    //     // Get the field name
-    //     fieldName = $(this).attr('field');
-    //     // Get its current value
-    //     var currentVal = parseInt($('input[name='+fieldName+']').val());
-    //     // If is not undefined
-    //     if (!isNaN(currentVal)) {
-    //         // Increment
-    //         $('input[name='+fieldName+']').val(currentVal + 1);
-    //     } else {
-    //         // Otherwise put a 0 there
-    //         $('input[name='+fieldName+']').val(0);
-    //     }
-    // });
-    // // This button will decrement the value till 0
-    // $(".qtyminus").click(function(e) {
-    //     // Stop acting like a button
-    //     e.preventDefault();
-    //     // Get the field name
-    //     fieldName = $(this).attr('field');
-    //     // Get its current value
-    //     var currentVal = parseInt($('input[name='+fieldName+']').val());
-    //     // If it isn't undefined or its greater than 0
-    //     if (!isNaN(currentVal) && currentVal > 0) {
-    //         // Decrement one
-    //         $('input[name='+fieldName+']').val(currentVal - 1);
-    //     } else {
-    //         // Otherwise put a 0 there
-    //         $('input[name='+fieldName+']').val(0);
-    //     }
-    // });
-
-    // $('.qtyplus').each(function(index){
-    //   $(this).click(function(e){
-    //       e.preventDefault();
-    //       fieldName = $(this).attr('field');
-    //       var currentVal = parseInt($('input[name='+fieldName+']').val());
-    //       if (!isNaN(currentVal)) {
-    //           $('input[name='+fieldName+']').val(currentVal + 1);
-    //       } else {
-    //           $('input[name='+fieldName+']').val(0);
-    //       }
-    //   });
-    // });
-    //
-    // $(".qtyminus").each(function(index){
-    //   $(this).click(function(e) {
-    //     e.preventDefault();
-    //     fieldName = $(this).attr('field');
-    //     var currentVal = parseInt($('input[name='+fieldName+']').val());
-    //     if (!isNaN(currentVal) && currentVal > 0) {
-    //         $('input[name='+fieldName+']').val(currentVal - 1);
-    //     } else {
-    //         $('input[name='+fieldName+']').val(0);
-    //     }
-    //   });
-    // });
 
     $('.qtyplus').each(function(index) {
       $(this).click(function(e) {

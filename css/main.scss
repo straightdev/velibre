@@ -911,6 +911,8 @@ $purple: #815374;
 $purple-hover: #5b3b52;
 
 .logo-wrapper {
+  position: relative;
+  z-index: 999;
   .logo {
     font-family:'', sans-serif;
     color: #fff;
@@ -921,14 +923,66 @@ $purple-hover: #5b3b52;
 }
 
 .zum-shop-wrapper{
+  position: relative;
+  z-index: 999;
   .zum-shop-button {
     width:100%;
     height: auto;
     padding: 0;
-    a{
+    #zum-toggle{
       display: block;
       width: 100%;
       padding: 14px 5px;
+
+      &.zum-hidden {
+        .open-text {
+          display: inline-block;
+          -moz-transition: all .3s ease-in-out 0s;
+          -webkit-transition: all .3s ease-in-out 0s;
+          -o-transition: all .3s ease-in-out 0s;
+          transition: all .3s ease-in-out 0s;
+        }
+        .close-text {
+          display: none;
+          -moz-transition: all .3s ease-in-out 0s;
+          -webkit-transition: all .3s ease-in-out 0s;
+          -o-transition: all .3s ease-in-out 0s;
+          transition: all .3s ease-in-out 0s;
+        }
+        .arrow{
+          -moz-transition: all .5s ease-in-out 0s;
+          -webkit-transition: all .5s ease-in-out 0s;
+          -o-transition: all .5s ease-in-out 0s;
+          transition: all .5s ease-in-out 0s;
+        }
+      }
+      &.zum-showed {
+        .open-text {
+          display: none;
+          -moz-transition: all .3s ease-in-out 0s;
+          -webkit-transition: all .3s ease-in-out 0s;
+          -o-transition: all .3s ease-in-out 0s;
+          transition: all .3s ease-in-out 0s;
+        }
+        .close-text {
+          display: inline-block;
+          -moz-transition: all .3s ease-in-out 0s;
+          -webkit-transition: all .3s ease-in-out 0s;
+          -o-transition: all .3s ease-in-out 0s;
+          transition: all .3s ease-in-out 0s;
+        }
+        .arrow {
+          -moz-transition: all .5s ease-in-out 0s;
+          -webkit-transition: all .5s ease-in-out 0s;
+          -o-transition: all .5s ease-in-out 0s;
+          transition: all .5s ease-in-out 0s;
+          -webkit-transform: rotate(270deg);
+          -moz-transform: rotate(540deg);
+          -o-transform: rotate(540deg);
+          -ms-transform: rotate(540deg);
+          transform: rotate(540deg);
+        }
+      }
     }
     .arrow{
       font-family: 'HDV', sans-serif;
@@ -1277,15 +1331,18 @@ $purple-hover: #5b3b52;
 #zum-shop {
   display: none;
   position: absolute;
+  z-index: 997;
   top:0;
   right:0;
   left: 0;
+  height: 100vh;
+  min-height: 960px;
   background-color: rgba(0,0,0,0.9);
   color: #fff;
   .oversized-container {width: 90%;}
   h1, h2, h3, h4 {color: #fff;}
   .zum-intro {
-    margin-top: 50px;
+    margin-top: 140px;
   }
   .zum-products {
     margin-top: 30px;
