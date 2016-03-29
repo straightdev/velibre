@@ -911,19 +911,19 @@ $purple: #815374;
 $purple-hover: #5b3b52;
 
 .logo-wrapper {
-  margin-top: 30px;
+  margin-top: 10px;
   .logo {
     font-family:'', sans-serif;
     color: #fff;
     background-color: $black;
-    font-size: 50px;
+    font-size: 30px;
   }
 }
 
 .zum-shop-wrapper{
   .zum-shop-button {
-    width:150px;
-    height: 180px;
+    width:100%;
+    height: auto;
     padding: 0;
     a{
       display: block;
@@ -933,12 +933,13 @@ $purple-hover: #5b3b52;
     .arrow{
       font-family: 'HDV', sans-serif;
       color: #fff;
-      font-size: 45px;
-      line-height: 60px;
+      font-size: 30px;
+      display: inline;
     }
     .link-text{
       font-size: 20px;
       color: #fff;
+      display: inline;
     }
   }
 }
@@ -956,13 +957,15 @@ $purple-hover: #5b3b52;
 }
 
 .x-separator {
+  padding: 10px 0;
   margin: 0;
   font-weight: bold;
   font-size: 35px;
 }
 
 .x-separator-small {
-  margin: 0 0 10px 0;
+  padding: 0 0 10px 0;
+  margin: 0;
   font-weight: bold;
   font-size: 14px;
 }
@@ -1036,8 +1039,7 @@ $purple-hover: #5b3b52;
 #screen1 {
   .hero-image{
     position: relative;
-    height: 75vh;
-    min-height: 420px;
+    min-height: 460px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1047,16 +1049,17 @@ $purple-hover: #5b3b52;
       color: #fff;
     }
     .copyright-product {
+
       display: inline-block;
       background-color: #311f1f;
       color: #fff;
-      font-size: 24px;
+      font-size: 16px;
       padding: 5px 20px;
     }
 
 
     .main-navigation-wrapper {
-      margin-top: 30px;
+
       nav{
         background: none;
         border: none;
@@ -1068,6 +1071,9 @@ $purple-hover: #5b3b52;
           .icon-bar {
             background-color: #fff;
           }
+        }
+        .navbar-collapse {
+          border-color: transparent;
         }
         ul.nav {
           .open > a{
@@ -1136,14 +1142,17 @@ $purple-hover: #5b3b52;
         }
       }
     }
+    .screen-arrow {
+      a { color: #fff; }
+    }
   }
   .screen1-bottom {
-    height: 25vh;
     #quick-access{
       padding: 20px 15px;
       .quick-box {
         text-align: center;
         padding: 0;
+        margin-bottom: 15px;
         .box-content {
           border-right: 1px solid lightgray;
         }
@@ -1207,8 +1216,9 @@ $purple-hover: #5b3b52;
   .screen-title { color: $yellow; }
   .x-separator { color: $yellow; padding-bottom: 20px;}
   .screen-content{
+    display: inline-block;
     text-align: left;
-    margin-left: 40%;
+    margin-left: 5%;
     p { margin-bottom: 30px;}
     .coffee-types {
       .coffee-type {
@@ -1249,12 +1259,14 @@ $purple-hover: #5b3b52;
   .bottom-menu1, .bottom-menu2 {
     button {
       padding: 5px 15px;
+      width: 100%
     }
   }
   .colophon {
     margin-top: 20px;
     .colophon-info {
-      text-align: left;
+      font-size: 12px;
+      text-align: center;
       p {margin:0;}
     }
   }
@@ -1267,7 +1279,6 @@ $purple-hover: #5b3b52;
   top:0;
   right:0;
   left: 0;
-  height: 100vh;
   background-color: rgba(0,0,0,0.9);
   color: #fff;
   .oversized-container {width: 90%;}

@@ -2,9 +2,12 @@
   $(document).ready(function(){
 
     // Fluid font face for the hero screen
+    $('h1').fitText(1.5, { minFontSize: '40px', maxFontSize: '90px' });
+    $('h4').fitText(1.5, { minFontSize: '18px', maxFontSize: '24px' });
+    $('h3').fitText(1.5, { minFontSize: '25px', maxFontSize: '35px' });
     $("#responsive-headline1").fitText(1.5, { minFontSize: '40px', maxFontSize: '90px' });
     $("#responsive-headline2").fitText(2, { minFontSize: '25px', maxFontSize: '50px' });
-
+    $(".screen-title").fitText(1.5, { minFontSize: '40px', maxFontSize: '90px' });
 
     // arrows - smooth scrolling
     $('.screen-arrow a').on('click',function (e) {
