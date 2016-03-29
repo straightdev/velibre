@@ -1335,8 +1335,7 @@ $purple-hover: #5b3b52;
   top:0;
   right:0;
   left: 0;
-  height: 100vh;
-  min-height: 960px;
+  min-height: 100vh;
   background-color: rgba(0,0,0,0.9);
   color: #fff;
   .oversized-container {width: 90%;}
@@ -1351,17 +1350,18 @@ $purple-hover: #5b3b52;
         display: inline-block;
         .title-description-wrapper{
           position: relative;
-          text-align: right;
+          text-align: center;
           .product-description {
-            display: inline-block;;
-            width: 60%;
+            display: inline-block;
+            text-align: left;
+            width: 100%;
             padding-left: 10px;
             padding-right: 10px;
-            margin: 0 30px 0 0;
+            margin: 0 30px 15px 0;
             position: relative;
             &:after {
-              left: 100%;
-              top: 50%;
+              top: 100%;
+              left: 50%;
               border: solid transparent;
               content: " ";
               height: 0;
@@ -1369,17 +1369,20 @@ $purple-hover: #5b3b52;
               position: absolute;
               pointer-events: none;
               border-color: rgba(136, 183, 213, 0);
-              border-left-color: $black;
+              border-top-color: #88b7d5;
               border-width: 15px;
-              margin-top: -15px;
+              margin-left: -15px;
+
             }
           }
           .product-title {
             display: inline-block;;
             width: auto;
-            float: right;
-            margin: 0;
+            float: none;
+            margin: 5px 0 0 0;
             padding: 9px;
+            font-size: 20px;
+            font-family: 'HDV', sans-serif;
           }
         }
 
@@ -1404,32 +1407,32 @@ $purple-hover: #5b3b52;
       }
       .lento .product-description,
       .lento .product-title  {background-color: $yellow;}
-      .lento .product-description:after {border-left-color: $yellow !important;}
+      .lento .product-description:after {border-top-color: $yellow;}
       .lento .qty-form .qty {background-color: $yellow;}
 
       .allegro .product-description,
       .allegro .product-title  {background-color: $purple;}
-      .allegro .product-description:after {border-left-color: $purple !important;}
+      .allegro .product-description:after {border-top-color: $purple;}
       .allegro .qty-form .qty {background-color: $purple;}
 
       .concerto .product-description,
       .concerto .product-title  {background-color: $green;}
-      .concerto .product-description:after {border-left-color: $green !important;}
+      .concerto .product-description:after {border-top-color: $green;}
       .concerto .qty-form .qty {background-color: $green;}
 
       .presto .product-description,
       .presto .product-title  {background-color: $red;}
-      .presto .product-description:after {border-left-color: $red !important;}
+      .presto .product-description:after {border-top-color: $red;}
       .presto .qty-form .qty {background-color: $red;}
 
       .fortis .product-description,
       .fortis .product-title  {background-color: $black;}
-      .fortis .product-description:after {border-left-color: $black !important;}
+      .fortis .product-description:after {border-top-color: $black;}
       .fortis .qty-form .qty {background-color: #fff;}
 
       .mix .product-description,
       .mix .product-title  {background-color: #fff; color: $black;}
-      .mix .product-description:after {border-left-color: #fff !important;}
+      .mix .product-description:after {border-top-color: #fff;}
       .mix .qty-form .qty {background-color: #fff;}
 
     }
@@ -1548,7 +1551,7 @@ $purple-hover: #5b3b52;
               }
                a {
                  padding: 10px;
-                 font-size: 16px;
+                 font-size: 15px;
                }
             }
           }
@@ -1629,6 +1632,70 @@ $purple-hover: #5b3b52;
       }
     }
   }
+
+
+  #zum-shop {
+    .product-type{ width: 55%; }
+    .smallbox-qty { width: 15%; }
+    .bigbox-qty { width: 16%; }
+    .overview { width: 14%; }
+    .zum-products {
+      .selection {
+        .product-type{
+          .title-description-wrapper{
+            text-align: right;
+            .product-description {
+              width: 58%;
+              position: relative;
+              font-size: 12px;
+              &:after {
+                left: 100%;
+              	top: 50%;
+              	border: solid transparent;
+              	content: " ";
+              	height: 0;
+              	width: 0;
+              	position: absolute;
+              	pointer-events: none;
+              	border-color: rgba(136, 183, 213, 0);
+              	border-left-color: #88b7d5;
+              	border-width: 15px;
+              	margin-top: -15px;
+                margin-left: 0;
+              }
+            }
+            .product-title {
+                float: right;
+            }
+          }
+
+        }
+
+        .overview {
+          line-height: 1.5;
+          text-align: center;
+          .overview-total {
+            float: none;
+          }
+        }
+
+        .allegro .product-description:after {border-left-color: $yellow !important; }
+        .allegro .product-description:after {border-top-color: $purple !important;}
+        .concerto .product-description:after {border-top-color: $green !important;}
+        .presto .product-description:after {border-top-color: $red !important;}
+        .fortis .product-description:after {border-top-color: $black !important;}
+        .mix .product-description:after {border-top-color: #fff !important;}
+
+      }
+      .cart-total {
+        .cart-total-title {
+          font-size: 24px;
+          font-weight: bold;
+        }
+      }
+    }
+
+}
 }
 
 @media (min-width: 1400px) {
