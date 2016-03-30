@@ -10,23 +10,55 @@
     $(".screen-title").fitText(1.5, { minFontSize: '40px', maxFontSize: '90px' });
 
     // arrows - smooth scrolling
-    $('.screen-arrow a').on('click',function (e) {
+    $('.screen-arr').on('click',function (e) {
 	    e.preventDefault();
-      var target = this.hash;
-	    var $target = $(target);
+      var location = this.hash;
+      window.location.hash = location;
       $('html, body').stop().animate({
-      'scrollTop': $target.offset().top
+      'scrollTop': $(this).offset().top
     }, 1000);
 	});
+
+  $('#screen-top').on('click',function (e) {
+    e.preventDefault();
+    // var target = this.hash;
+    // var $target = $(target);
+    $('html, body').stop().animate({
+    'scrollTop': $('#screen1').offset().top
+  }, 1000);
+});
+
+
 
   // zum shop open/close
   $('#zum-toggle').on('click', function(e){
     e.preventDefault();
     if ($(this).hasClass('zum-hidden')){
       $(this).removeClass('zum-hidden').addClass('zum-showed');
+      $('#zum-toggle2').removeClass('zum-hidden').addClass('zum-showed');
       $('#zum-shop').fadeIn();
     } else {
       $(this).removeClass('zum-showed').addClass('zum-hidden');
+      $('#zum-toggle2').removeClass('zum-showed').addClass('zum-hidden');
+      $('#zum-shop').fadeOut();
+    }
+
+  });
+
+  $('#zum-toggle2').on('click', function(e){
+    e.preventDefault();
+    if ($(this).hasClass('zum-hidden')){
+      console.log("hidden");
+      $(this).removeClass('zum-hidden').addClass('zum-showed');
+      $('#zum-toggle').removeClass('zum-hidden').addClass('zum-showed');
+      $('#zum-shop').fadeIn();
+      window.scrollTo(0, 0);
+      $(window).stop().animate({
+      'scrollTop': window.offset().top
+    }, 1000);
+    } else {
+      $(this).removeClass('zum-showed').addClass('zum-hidden');
+      $('#zum-toggle').removeClass('zum-showed').addClass('zum-hidden');
       $('#zum-shop').fadeOut();
     }
 

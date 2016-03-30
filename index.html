@@ -42,7 +42,7 @@
             <div class ="zum-shop-wrapper col-xs-6 col-sm-2 col-md-3 col-lg-5">
               <div class="zum-shop-button red-button">
                 <a href="#" id="zum-toggle" class="zum-hidden">
-                  <div class="arrow"> &darr; </div>
+                  <div class="arrow">l</div>
                   <div class="link-text open-text"> Zum Shop </div>
                   <div class="link-text close-text"> Shop schließen </div>
                 </a>
@@ -145,7 +145,7 @@
 
           <!-- <div class=row>
               <div  class="screen-arrow hero-arrow hidden-xs hidden-lg" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <a id="screen0-arrow" href="#quick-access">&darr;</a>
+                <a id="screen0-arrow" href="#quick-access">l</a>
               </div>
           </div> -->
         </div> <!-- /. row -->
@@ -162,7 +162,7 @@
                 <h4 class="x-separator-small">+</h4>
               </div>
               <div class="box-cta">
-                <button>Zur Info</button>
+                <a id="zum-toggle2" class="zum-hidden">Zur Info</a>
               </div>
             </div>
             <div class="quick-box box2 col-xs-12 col-sm-6 col-md-3 col-lg-3">
@@ -171,7 +171,7 @@
                 <h4 class="x-separator-small">+</h4>
               </div>
               <div class="box-cta">
-                <button>Zu den Blends</button>
+                <a href="#screen3">Zu den Blends</a>
               </div>
             </div>
             <div class="quick-box box3 col-xs-12 col-sm-6 col-md-3 col-lg-3">
@@ -180,7 +180,7 @@
                 <h4 class="x-separator-small">+</h4>
               </div>
               <div class="box-cta">
-                <button>Zur Kapsel</button>
+                <a>Zur Kapsel</a>
               </div>
             </div>
             <div class="quick-box box4 col-xs-12 col-sm-6 col-md-3 col-lg-3">
@@ -189,14 +189,14 @@
                 <h4 class="x-separator-small">+</h4>
               </div>
               <div class="box-cta">
-                <button>Zur Info</button>
+                <a>Zur Info</a>
               </div>
             </div>
           </div> <!-- /. quick-access -->
           </div><!-- /.row -->
           <div class=row>
               <div  class="screen-arrow hidden-xs" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <a id="screen1-arrow" href="#screen2">&darr;</a>
+                <a class="screen-arr" id="screen1-arrow" href="#zu-den-blends" name="zu-den-blends">l</a>
               </div>
           </div>
       </div> <!-- /. screen1 bottom -->
@@ -227,7 +227,7 @@
         </div> <!-- /. row -->
         <div class=row>
           <div  class="screen-arrow hidden-xs" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <a  id="screen2-arrow" href="#screen3">&darr;</a>
+            <a  class="screen-arr"  id="screen2-arrow" href="#zur-kapsel" name="zur-kapsel">l</a>
           </div>
         </div>
       </div> <!-- /. container -->
@@ -326,7 +326,7 @@
 
         <div class=row>
           <div  class="screen-arrow hidden-xs" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <a  id="screen3-arrow" href="#screen4">&darr;</a>
+            <a  class="screen-arr" id="screen3-arrow" href="#zur-info" name="zur-info">l</a>
           </div>
         </div>
 
@@ -355,7 +355,7 @@
 
         <div class=row>
           <div  class="screen-arrow hidden-xs" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <a  id="screen4-arrow" href="#screen1">&uarr;</a>
+            <a  id="screen-top" href="#home">k</a>
           </div>
         </div>
 
@@ -441,7 +441,7 @@
               </div> <!-- /. product row -->
 
               <div class="row product-row allegro">
-                <div class="product-type col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="product-type col-xs-12 col-sm-12 col-md-12 col-lg-6">
                   <div class="title-description-wrapper clearfix">
                     <p class="product-description">
                       <strong>Espresso:</strong> Kurze Produktbeschreibung zur Sorte. Ganz kurz. Nur diese zwei Zeilen Blindtext. Das reicht.
@@ -632,9 +632,45 @@
 
             <div class="cart-total col-xs-12 col-sm-12 col-md-12 col-lg-2">
               <p class="cart-total-title"> Dein Warenkorb </p>
+              <p class="cart-total-content clearfix">
+                <span class="col1"> Zwischensumme </span>
+                <span class="col2"> = 30.00 </span>
+              </p>
+              <p class="cart-total-content clearfix">
+                <span class="col1"> Versandkosten* </span>
+                <span class="col2"> = 3.80 </span>
+              </p>
+              <p class="cart-total-content clearfix">
+                <span class="col1"> Mehrwertsteuer 7% </span>
+                <span class="col2"> = 5.70 </span>
+              </p>
+              <p class="cart-total-content total clearfix">
+                <span class="col1"> Summe inkl. MwSt. </span>
+                <span class="col2"> = 37.50 </span>
+              </p>
+              <p class="cart-total-buttons">
+                <button class= "red-button" href="#"> Zur Kasse </button>
+                <button class= "red-button" href="#"> In den Warenkorb </button>
+              </p>
+              <div class="cart-total-paypal">
+                <div class="paypal-wrapper">
+                  <span>Direkt zu </span>
+                  <img src="images/btn_paynow.gif">
+                </div>
+              </div>
+
             </div> <!-- /. cart total -->
           </div> <!-- /. row -->
         </div> <!-- zum products -->
+      </div> <!-- /. row -->
+      <div class="row">
+        <div class="shop-bottom-info col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <p>* Versandkosten bei ausschließlichen Bestellungen zu Adressen in Deutschland.<br>
+        Im internationalen Versand und anderen Bestellungen fallen zusätzliche
+          Versandkosten an, die Dir nach Eingabe der Zieladresse genannt werden.
+          Grundpreis: 0,299 Cent pro Kapsel.</p>
+
+        </div>
       </div> <!-- /. row -->
     </section> <!-- /. zoom shop -->
 
