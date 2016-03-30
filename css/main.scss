@@ -1359,9 +1359,10 @@ $purple-hover: #5b3b52;
             padding-right: 10px;
             margin: 0 30px 15px 0;
             position: relative;
+            font-size: 20px;
             &:after {
-              top: 100%;
-              left: 50%;
+              left: 100%;
+              top: 50%;
               border: solid transparent;
               content: " ";
               height: 0;
@@ -1369,9 +1370,9 @@ $purple-hover: #5b3b52;
               position: absolute;
               pointer-events: none;
               border-color: rgba(136, 183, 213, 0);
-              border-top-color: #88b7d5;
-              border-width: 15px;
-              margin-left: -15px;
+              border-left-color: $black;
+              border-width: 10px;
+              margin-top: -10px;
 
             }
           }
@@ -1389,50 +1390,61 @@ $purple-hover: #5b3b52;
       }
       .smallbox-qty {
         border-right: 1px solid white;
+
       }
       .bigbox-qty {
         border-right: 1px solid white;
       }
+
+      .smallbox-qty, .bigbox-qty {
+        .boxing-type {
+          margin-top: 10px;
+          font-size: 24px;
+          font-weight: bold;
+        }
+      }
+
       .overview {
         line-height:80px;
         border-right: 1px solid white;
+        text-align: center;
         .overview-selected{
           display: inline-block;
-          float: left;
+          float: none;
         }
         .overview-total{
           display: inline-block;
-          float: right;
+          float: none;
         }
       }
       .lento .product-description,
       .lento .product-title  {background-color: $yellow;}
-      .lento .product-description:after {border-top-color: $yellow;}
+      .lento .product-description:after {border-left-color: $yellow !important;}
       .lento .qty-form .qty {background-color: $yellow;}
 
       .allegro .product-description,
       .allegro .product-title  {background-color: $purple;}
-      .allegro .product-description:after {border-top-color: $purple;}
+      .allegro .product-description:after {border-left-color: $purple !important;}
       .allegro .qty-form .qty {background-color: $purple;}
 
       .concerto .product-description,
       .concerto .product-title  {background-color: $green;}
-      .concerto .product-description:after {border-top-color: $green;}
+      .concerto .product-description:after {border-left-color: $green !important;}
       .concerto .qty-form .qty {background-color: $green;}
 
       .presto .product-description,
       .presto .product-title  {background-color: $red;}
-      .presto .product-description:after {border-top-color: $red;}
+      .presto .product-description:after {border-left-color: $red !important;}
       .presto .qty-form .qty {background-color: $red;}
 
       .fortis .product-description,
       .fortis .product-title  {background-color: $black;}
-      .fortis .product-description:after {border-top-color: $black;}
+      .fortis .product-description:after {border-left-color: $black !important;}
       .fortis .qty-form .qty {background-color: #fff;}
 
       .mix .product-description,
-      .mix .product-title  {background-color: #fff; color: $black;}
-      .mix .product-description:after {border-top-color: #fff;}
+      .mix .product-title  {background-color: #fff; color: $black }
+      .mix .product-description:after {border-left-color: #fff !important;;}
       .mix .qty-form .qty {background-color: #fff;}
 
     }
@@ -1516,6 +1528,57 @@ $purple-hover: #5b3b52;
      }
    }
 
+   #zum-shop {
+     .product-row {margin-bottom: 50px;}
+     .product-type{ width: 100%; margin-top: 20px; margin-bottom: 20px;}
+     .smallbox-qty, .bigbox-qty { width: 30%; }
+     .overview { width: 40%; }
+     .zum-products {
+       .selection {
+         .product-type{
+           .title-description-wrapper{
+             text-align: center;
+             .product-description {
+               display: inline-block;
+               float: left;
+               width: 60%;
+               position: relative;
+               font-size: 16px;
+             }
+             .product-title {
+               display: inline-block;
+               float: left;
+               width: 35%;
+               margin-top: 0;
+
+             }
+           }
+
+         }
+
+        .bigbox-qty {
+          border: none;
+        }
+
+         .overview {
+           font-size: 20px;
+           line-height: 110px;
+           text-align: center;
+           .overview-selected {
+             float: none;
+           }
+           .overview-total {
+             float: none;
+           }
+         }
+
+
+       }
+
+     }
+
+   }
+
 }
 @media (min-width: 992px) {
   #screen1 {
@@ -1575,6 +1638,9 @@ $purple-hover: #5b3b52;
       }
     }
   }
+
+
+
 
 }
 @media (min-width: 1200px) {
@@ -1648,21 +1714,6 @@ $purple-hover: #5b3b52;
               width: 58%;
               position: relative;
               font-size: 12px;
-              &:after {
-                left: 100%;
-              	top: 50%;
-              	border: solid transparent;
-              	content: " ";
-              	height: 0;
-              	width: 0;
-              	position: absolute;
-              	pointer-events: none;
-              	border-color: rgba(136, 183, 213, 0);
-              	border-left-color: #88b7d5;
-              	border-width: 15px;
-              	margin-top: -15px;
-                margin-left: 0;
-              }
             }
             .product-title {
                 float: right;
@@ -1679,12 +1730,6 @@ $purple-hover: #5b3b52;
           }
         }
 
-        .allegro .product-description:after {border-left-color: $yellow !important; }
-        .allegro .product-description:after {border-top-color: $purple !important;}
-        .concerto .product-description:after {border-top-color: $green !important;}
-        .presto .product-description:after {border-top-color: $red !important;}
-        .fortis .product-description:after {border-top-color: $black !important;}
-        .mix .product-description:after {border-top-color: #fff !important;}
 
       }
       .cart-total {
