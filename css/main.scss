@@ -109,6 +109,8 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 html {
   font-size: 10px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -168,7 +170,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 h1, .h1 { font-size: 90px; margin: .2em 0;}
-h2, .h2 { font-size: 50px; margin: .2em 0;}
+h2, .h2 { font-size: 40px; margin: .2em 0;}
 h3, .h3 { font-size: 35px; }
 h4, .h4 { font-size: 24px; }
 h5, .h5 { font-size: 14px; }
@@ -1098,7 +1100,7 @@ $purple-hover: #5b3b52;
 
 .x-separator {
   font-family: 'BrandonExtras', sans-serif;
-  padding: 10px 0;
+  padding: 10px 0 0 0;
   margin: 0;
   font-weight: bold;
   font-size: 50px !important;
@@ -1149,7 +1151,7 @@ $purple-hover: #5b3b52;
   .qty {
       width: 30px;
       height: 30px;
-      padding: 0;
+      padding: 5px 0 0 0;
       border-radius: 50%;
       text-align: center;
       display: inline-block;
@@ -1161,6 +1163,7 @@ $purple-hover: #5b3b52;
      width:25px;
      height:25px;
      padding:0;
+     margin-top: -10px;
      background: none;
      font-weight: bold;
      font-size: 24px;
@@ -1176,7 +1179,10 @@ $purple-hover: #5b3b52;
   }
 }
 
-
+.small-centred {
+  padding-left: 35%;
+  padding-right: 35%;
+}
 
 #screen1 {
   .hero-image{
@@ -1573,8 +1579,8 @@ $purple-hover: #5b3b52;
 @media (min-width: 768px) {
    #screen1 {
      .hero-image {
-       height:55vh;
-       min-height: 550px;
+      //  height:55vh;
+      //  min-height: 550px;
        .logo-wrapper {
          text-align: right;
          margin-top: 30px;
@@ -1618,8 +1624,8 @@ $purple-hover: #5b3b52;
        }
      }
      .screen1-bottom {
-       height: 45vh;
-       min-height: 410px;
+      //  height: 45vh;
+      //  min-height: 410px;
        #quick-access {
          .quick-box:nth-of-type(3), .quick-box:nth-of-type(4) {
            margin-bottom: 0;
@@ -1690,8 +1696,8 @@ $purple-hover: #5b3b52;
 @media (min-width: 992px) {
   #screen1 {
     .hero-image {
-      height:70vh;
-      min-height: 580px;
+      // height:70vh;
+      // min-height: 580px;
       .logo-wrapper {
         .logo {
           /**/
@@ -1728,11 +1734,7 @@ $purple-hover: #5b3b52;
         }
       }
     }
-    .screen1-bottom {
-      height: 30vh;
-      min-height: 280px;
 
-    }
   }
 
   #footer {
@@ -1754,8 +1756,8 @@ $purple-hover: #5b3b52;
 
   #screen1 {
     .hero-image {
-      height: 72vh;
-      min-height: 650px;
+      // height: 72vh;
+      // min-height: 650px;
       .logo-wrapper {
         text-align: center;
         .logo {
@@ -1792,8 +1794,8 @@ $purple-hover: #5b3b52;
       }
     }
     .screen1-bottom {
-      height: 28vh;
-      min-height: 280px;
+      // height: 28vh;
+      // min-height: 280px;
       #quick-access {
         padding-left: 15%;
         padding-right: 15%;
@@ -1832,7 +1834,7 @@ $purple-hover: #5b3b52;
                 width: auto;
                 display: inline-block;
                 font-size: 14px;
-                padding: 10px 5px;
+                padding: 12px 5px 8px 5px;
                 text-align: center;
                 float: right;
             }
@@ -1880,8 +1882,8 @@ $purple-hover: #5b3b52;
         .cart-total-buttons {
           text-align: left;
           button {
-            font-size:12px;
-            padding: 2px;
+            font-size:13px;
+            padding: 2px 5px;
             &:first-child {
               margin-right: 2px;
             }
@@ -1900,6 +1902,24 @@ $purple-hover: #5b3b52;
     margin-bottom: 20px;
   }
 }
+
+/* Full height page cards*/
+
+.navigation-arrow {height: 15vh;}
+#screen1 {
+  height: 90vh; min-height: 780px;
+  .hero-image {
+    height:73vh;
+    min-height: 625px;
+  }
+}
+#screen2 {
+  height:80vh; min-height: 350px;
+  padding-top: 200px;}
+#screen3 {
+  height: 80vh; min-height: 549px;
+}
+
 }
 
 @media (min-width: 1400px) {

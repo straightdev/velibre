@@ -6,14 +6,13 @@
     $('h4').fitText(1.5, { minFontSize: '18px', maxFontSize: '24px' });
     $('h3').fitText(1.5, { minFontSize: '25px', maxFontSize: '35px' });
     $("#responsive-headline1").fitText(1.5, { minFontSize: '40px', maxFontSize: '90px' });
-    $("#responsive-headline2").fitText(2, { minFontSize: '25px', maxFontSize: '50px' });
+    $("#responsive-headline2").fitText(2, { minFontSize: '25px', maxFontSize: '40px' });
     $(".screen-title").fitText(1.5, { minFontSize: '40px', maxFontSize: '90px' });
 
     // arrows - smooth scrolling
     $('.screen-arr').on('click',function (e) {
 	    e.preventDefault();
-      var location = this.hash;
-      window.location.hash = location;
+      // var location = this.hash;
       $('html, body').stop().animate({
       'scrollTop': $(this).offset().top
     }, 1000);
