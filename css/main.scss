@@ -21,15 +21,75 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
    2. Base and utilities
  ===================================================*/
 
+
+
  @font-face {
-     font-family: MinionPro;
-     src: url('../fonts/MinionPro-Regular.otf');
+     font-family: BrandonOne;
+     src: url('../fonts/Brandon_Printed_OneWeb.eot');
+     src: url('../fonts/Brandon_Printed_OneWeb.woff') format('woff');
+     font-weight: 400;
  }
 
  @font-face {
-     font-family: HDV;
-     src: url('../fonts/HVD Fonts - Brandon Printed One.ttf');
+     font-family: BrandonTwo;
+     src: url('../fonts/Brandon_Printed_TwoWeb.eot');
+     src: url('../fonts/Brandon_Printed_TwoWeb.woff') format('woff');
+     font-weight: 400;
  }
+
+@font-face {
+    font-family: BrandonDouble;
+    src: url('../fonts/Brandon_Printed_DoubleWeb.eot');
+    src: url('../fonts/Brandon_Printed_DoubleWeb.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: BrandonExtras;
+    src: url('../fonts/Brandon_Printed_ExtrasWeb.eot');
+    src: url('../fonts/Brandon_Printed_ExtrasWeb.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: BrandonInline;
+    src: url('../fonts/Brandon_Printed_InlineWeb.eot');
+    src: url('../fonts/Brandon_Printed_InlineWeb.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: BrandonOneShadow;
+    src: url('../fonts/Brandon_Printed_One_ShadowWeb.eot');
+    src: url('../fonts/Brandon_Printed_One_ShadowWeb.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: BrandonShadow;
+    src: url('../fonts/Brandon_Printed_ShadowWeb.eot');
+    src: url('../fonts/Brandon_Printed_ShadowWeb.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: BrandonShadow;
+    src: url('../fonts/Brandon_Printed_Two_ShadowWeb.eot.eot');
+    src: url('../fonts/Brandon_Printed_Two_ShadowWeb.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: MetaBook;
+    src: url('../fonts/MetaWeb-Book.woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: MetaBold;
+    src: url('../fonts/MetaWeb-Bold.woff');
+    font-weight: 700;
+}
 
 
 /* Base */
@@ -52,7 +112,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'MetaBook', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height:1.8;
   color: #333;
@@ -101,7 +161,7 @@ hr {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: 'HDV', sans-serif;
+  font-family: 'BrandonTwo', sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -913,11 +973,13 @@ $green-hover: #456a4d;
 $purple: #815374;
 $purple-hover: #5b3b52;
 
+
+
 .logo-wrapper {
   position: relative;
   z-index: 999;
   .logo {
-    font-family:'', sans-serif;
+    font-family:'MetaBold', sans-serif;
     color: #fff;
     background-color: $black;
     font-size: 30px;
@@ -932,6 +994,7 @@ $purple-hover: #5b3b52;
     width:100%;
     height: auto;
     padding: 0;
+    font-family: 'MetaBold', sans-serif;
     #zum-toggle{
       display: block;
       width: 100%;
@@ -988,7 +1051,7 @@ $purple-hover: #5b3b52;
       }
     }
     .arrow{
-      font-family: 'HDV', sans-serif;
+      font-family: 'BrandonExtras', sans-serif;
       color: #fff;
       font-size: 25px;
       display: inline;
@@ -1005,7 +1068,7 @@ $purple-hover: #5b3b52;
 .screen-arrow a, .screen-arrow a:visited{
   font-size: 35px;
   font-weight: bold;
-  font-family: 'HDV', sans-serif;
+  font-family: 'BrandonExtras', sans-serif;
   color: $black;
 }
 
@@ -1014,17 +1077,19 @@ $purple-hover: #5b3b52;
 }
 
 .x-separator {
+  font-family: 'BrandonExtras', sans-serif;
   padding: 10px 0;
   margin: 0;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 50px !important;
 }
 
 .x-separator-small {
+  font-family: 'BrandonExtras', sans-serif;
   padding: 0 0 10px 0;
   margin: 0;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 24px !important;
 }
 
 .red-button, .red-button:visited {
@@ -1069,7 +1134,7 @@ $purple-hover: #5b3b52;
       text-align: center;
       display: inline-block;
       font-weight: bold;
-      font-family: 'HDV', sans-serif;
+      font-family: 'BrandonTwo', sans-serif;
       font-size: 16px;
   }
   input.qtyplus, input.qtyminus {
@@ -1206,11 +1271,12 @@ $purple-hover: #5b3b52;
   }
   .screen1-bottom {
     #quick-access{
-      padding: 20px 15px;
+      padding-top: 20px 15px;
       .quick-box {
         text-align: center;
         padding: 0;
         margin-bottom: 15px;
+        margin-top: 15px;
         .box-content {
           border-right: 1px solid lightgray;
         }
@@ -1280,7 +1346,7 @@ $purple-hover: #5b3b52;
     p { margin-bottom: 30px;}
     .coffee-types {
       .coffee-type {
-        font-family: 'HDV', sans-serif;
+        font-family: 'BrandonTwo', sans-serif;
       }
       .lento { .coffee-type { color: $yellow; }}
       .allegro { .coffee-type { color: $purple; }}
@@ -1386,7 +1452,7 @@ $purple-hover: #5b3b52;
             margin: 5px 0 0 0;
             padding: 9px;
             font-size: 20px;
-            font-family: 'HDV', sans-serif;
+            font-family: 'BrandonTwo', sans-serif;
           }
         }
 
@@ -1409,7 +1475,6 @@ $purple-hover: #5b3b52;
 
       .overview {
         line-height:80px;
-        border-right: 1px solid white;
         text-align: center;
         .overview-selected{
           display: inline-block;
@@ -1532,10 +1597,7 @@ $purple-hover: #5b3b52;
    }
 
    #zum-shop {
-     .product-row {margin-bottom: 50px;}
-     .product-type{ width: 100%; margin-top: 20px; margin-bottom: 20px;}
-     .smallbox-qty, .bigbox-qty { width: 30%; }
-     .overview { width: 40%; }
+     .product-row { margin-bottom: 50px; }
      .zum-products {
        .selection {
          .product-type{
@@ -1690,8 +1752,13 @@ $purple-hover: #5b3b52;
     .screen1-bottom {
       height: 28vh;
       min-height: 280px;
-
+      #quick-access {
+        padding-left: 15%;
+        padding-right: 15%;
+      }
     }
+
+
 
   #footer {
     .bottom-menu1, .bottom-menu2 {
@@ -1704,25 +1771,32 @@ $purple-hover: #5b3b52;
 
 
   #zum-shop {
-    .product-type{ width: 55%; }
-    .smallbox-qty { width: 15%; }
-    .bigbox-qty { width: 16%; }
-    .overview { width: 14%; }
+    padding-left: 3%;
+    padding-right: 3%;
     .zum-products {
       .selection {
         .product-type{
           .title-description-wrapper{
             text-align: right;
             .product-description {
-              width: 58%;
+              width: 75%;
+              margin-right: 5px;
               position: relative;
               font-size: 12px;
             }
             .product-title {
+                width: 21%;
+                font-size: 14px;
+                padding: 10px 5px;
                 float: right;
+                text-align: center;
             }
           }
 
+        }
+
+        .smallbox-qty, .bigbox-qty {
+          .boxing-type {display: none;}
         }
 
         .overview {
