@@ -119,6 +119,7 @@ body {
   line-height:1.8;
   color: #333;
   background-color: #fff0d6;
+  overflow: hidden;
   .container {
     background-color: #fff;
   }
@@ -1753,17 +1754,22 @@ $purple-hover: #5b3b52;
 
   }
 
+
   #footer {
+    padding-left: 10%;
     .bottom-menu1, .bottom-menu2 {
       text-align: left;
-      margin-bottom: 10px;
       button {
-        font-size: 13px;
+        font-size: 11px;
         width: auto;
       }
     }
+    .colophon {
+      .colophon-info {
+        text-align: left;
+      }
+    }
   }
-
 
 
 
@@ -1819,15 +1825,6 @@ $purple-hover: #5b3b52;
     }
 
 
-
-  #footer {
-    .bottom-menu1, .bottom-menu2 {
-      button {
-        font-size: 16px;
-        width: auto;
-      }
-    }
-  }
 
 
   #zum-shop {
