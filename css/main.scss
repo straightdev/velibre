@@ -1184,6 +1184,11 @@ $purple-hover: #5b3b52;
   padding-right: 35%;
 }
 
+.big-centred {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
 #screen1 {
   .hero-image{
     position: relative;
@@ -1930,7 +1935,8 @@ $purple-hover: #5b3b52;
 }
 #screen2 {
   height:80vh; min-height: 350px;
-  padding-top: 200px;}
+  padding-top: 200px;
+}
 #screen3 {
   height: 80vh; min-height: 549px;
 }
@@ -1948,6 +1954,27 @@ $purple-hover: #5b3b52;
       padding: 8px;
       font-size: 13px;
     }
+  }
+}
+
+// inner page styles
+
+.inner {
+  h3 {
+    color: $yellow;
+  }
+
+  h1, h2, h4 {
+    color: $purple;
+  }
+  p {
+    margin-bottom: 30px;
+  }
+  #quick-access {
+    padding-top: 20px;
+  }
+  #content {
+    padding-top: 40px;
   }
 }
 

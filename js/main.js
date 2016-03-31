@@ -98,20 +98,15 @@
 
     // Snap pages
 
-var screenOK = window.innerWidth >= 1200;
-console.log(screenOK)
-
-function sectionScoll (OK) {
-    console.log ("parameter is = " + OK);
+if ($('body').hasClass('home')){
+  var screenOK = window.innerWidth >= 1200;
+  function sectionScoll (OK) {
     if(!OK){
       $('.snap').each(function() {
         $(this).off('mousewheel DOMMouseScroll');
       });
     } else {
-
-      console.log ("running function with OK = " + OK)
       var snapPositions = [];
-
       $('.snap').each(function() {
       snapPositions.push(parseInt($(this).offset().top));
       $(this).on({
@@ -155,14 +150,16 @@ function sectionScoll (OK) {
   $(window).resize(function() {
     if (window.innerWidth < 1200) {
       screenOK = false;
-      console.log (screenOK);
       sectionScoll(screenOK);
   } else if (window.innerWidth >= 1200) {
     screenOK = true;
-    console.log (screenOK);
     sectionScoll(screenOK);
   }
 });
+
+}
+
+
 
 
 
