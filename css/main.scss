@@ -119,7 +119,6 @@ body {
   line-height:1.8;
   color: #333;
   background-color: #fff0d6;
-  overflow: hidden;
   .container {
     background-color: #fff;
   }
@@ -1922,8 +1921,11 @@ $purple-hover: #5b3b52;
 #screen1 {
   height: 90vh; min-height: 780px;
   .hero-image {
-    height:73vh;
-    min-height: 625px;
+    height:70vh;
+    min-height: 630px;
+  }
+  .screen1-bottom {
+    min-height: 162px;
   }
 }
 #screen2 {
@@ -1937,7 +1939,6 @@ $purple-hover: #5b3b52;
 
 @media (min-width: 1400px) {
   #screen1 .hero-image {
-    min-height: 670px;
     .logo-wrapper .logo {
       font-size: 40px;
   }
