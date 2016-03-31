@@ -98,6 +98,7 @@
 
     // Snap pages
 
+    if (window.innerWidth >= 1200) {
       var snapPositions = [];
 
       $('.snap').each(function() {
@@ -135,6 +136,8 @@
       });
 
     });
+    }
+
 
 
 
