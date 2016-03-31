@@ -1917,12 +1917,12 @@ $purple-hover: #5b3b52;
 
 /* Full height page cards*/
 
-.navigation-arrow {height: 15vh;}
+.navigation-arrow {height: 15vh; max-height: 110px;}
 #screen1 {
-  height: 90vh; min-height: 780px;
+  height: 90vh; min-height: 700px;
   .hero-image {
     height:70vh;
-    min-height: 630px;
+    min-height: 520px;
   }
   .screen1-bottom {
     min-height: 162px;
