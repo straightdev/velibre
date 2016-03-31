@@ -12,22 +12,26 @@
     // arrows - smooth scrolling
     $('.screen-arr').on('click',function (e) {
 	    e.preventDefault();
-      // var location = this.hash;
       $('html, body').stop().animate({
       'scrollTop': $(this).offset().top
     }, 1000);
 	});
 
-  $('#screen-top').on('click',function (e) {
-    e.preventDefault();
-    // var target = this.hash;
-    // var $target = $(target);
-    $('html, body').stop().animate({
-    'scrollTop': $('#screen1').offset().top
-  }, 1000);
-});
+    $('#screen-top').on('click',function (e) {
+      e.preventDefault();
+      $('html, body').stop().animate({
+      'scrollTop': $('#screen1').offset().top
+    }, 1000);
+  });
 
-
+    $('.screen-anchor').on('click',function (e) {
+      e.preventDefault();
+      var location = this.hash;
+      var $location = $(location);
+      $('html, body').stop().animate({
+      'scrollTop': $($location).offset().top
+    }, 1000);
+    });
 
   // zum shop open/close
   $('#zum-toggle').on('click', function(e){
@@ -74,7 +78,6 @@
           $(this).siblings(".qty").val(currentVal + 1);
         } else {
           $(this).siblings(".qty").val(0);
-          console.log("Failed!")
         }
       });
     });
@@ -92,6 +95,49 @@
         }
       });
     });
+
+    // Snap pages
+
+      var snapPositions = [];
+
+      $('.snap').each(function() {
+      snapPositions.push(parseInt($(this).offset().top));
+      $(this).on({
+        'mousewheel DOMMouseScroll': function(e) {
+
+          // disable the scrolling event inside this element
+          e.preventDefault();
+          e.stopPropagation();
+
+          // snap to previous or to next element
+          var thisPosition = parseInt($(this).offset().top);
+          var snapPosition = 0;
+          var delta = 0;
+
+          if (e.type == 'mousewheel') {
+            delta = e.originalEvent.wheelDelta;
+          } else if (e.type == 'DOMMouseScroll') {
+            delta = e.originalEvent.detail;
+          }
+          if (delta >= 0) {
+            snapPosition = snapPositions[snapPositions.indexOf(thisPosition)-1];
+          }
+          else {
+            snapPosition = snapPositions[snapPositions.indexOf(thisPosition)+1];
+          }
+          snapPosition = snapPosition - 115; // decrease number to include top arrow
+          if (snapPosition !== "undefined") {
+            $('html, body').stop().animate({
+              'scrollTop': snapPosition
+            }, 100);
+          }
+        }
+      });
+
+    });
+
+
+
 
   });
 })(jQuery);
