@@ -172,7 +172,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 h1, .h1 { font-size: 90px; margin: .2em 0;}
 h2, .h2 { font-size: 40px; margin: .2em 0;}
 h3, .h3 { font-size: 35px; }
-h4, .h4 { font-size: 24px; }
+h4, .h4 { font-size: 24px; margin: 5px 0px;}
 h5, .h5 { font-size: 14px; }
 h6, .h6 { font-size: 12px; }
 
@@ -1103,7 +1103,7 @@ $purple-hover: #5b3b52;
 
 .x-separator {
   font-family: 'BrandonExtras', sans-serif;
-  padding: 10px 0 0 0;
+  padding: 0;
   margin: 0;
   font-weight: bold;
   font-size: 50px !important;
@@ -1111,10 +1111,10 @@ $purple-hover: #5b3b52;
 
 .x-separator-small {
   font-family: 'BrandonExtras', sans-serif;
-  padding: 0 0 10px 0;
+  padding-bottom: 2px;
   margin: 0;
   font-weight: bold;
-  font-size: 24px !important;
+  font-size: 14px !important;
 }
 
 .red-button, .red-button:visited {
@@ -1323,19 +1323,24 @@ $purple-hover: #5b3b52;
       padding-top: 20px 15px;
       .quick-box {
         text-align: center;
-        padding: 0;
-        margin-bottom: 15px;
-        margin-top: 15px;
-        .box-content {
-          border-right: 1px solid lightgray;
-        }
-        .box-content:first-child {
-          border-left: 1px solid lightgray;
-        }
+        padding-bottom: 5px;
+        padding-top: 5px;
         .box-cta a {
           display: inline-block;
+          font-size: 14px;
           color: #fff;
-          padding: 5px 10px;
+          padding: 1px 10px 0px 10px;
+        }
+        .box-separator {
+          height: 1px;
+          background-color: lightgray;
+          margin-top: 10px;
+          width: 35%;
+          position: relative;
+          left: 0;
+          right: 0;
+          margin-left: auto;
+          margin-right: auto;
         }
         &.box1 {
           .x-separator-small { color: $red; }
@@ -1370,6 +1375,7 @@ $purple-hover: #5b3b52;
           }
         }
       }
+
     }
     #screen1-arrow {
       color: #443332;
@@ -1757,7 +1763,21 @@ $purple-hover: #5b3b52;
         }
       }
     }
-
+  .screen1-bottom #quick-access {
+    .quick-box {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      .box-content {
+        border-bottom: none;
+        border-right: 1px solid lightgray;
+      }
+    }
+     .quick-box:first-child {
+         .box-content:first-child {
+           border-left: 1px solid lightgray;
+         }
+      }
+  }
   }
 
 
@@ -1828,6 +1848,7 @@ $purple-hover: #5b3b52;
         padding-left: 15%;
         padding-right: 15%;
       }
+
     }
 
 
