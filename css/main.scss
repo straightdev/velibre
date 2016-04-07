@@ -984,8 +984,8 @@ $purple-hover: #5b3b52;
     font-family:'MetaBold', sans-serif;
     color: #fff;
     background-color: $black;
-    font-size: 30px;
-    padding: 10px 20px;
+    font-size: 32px;
+    padding: 5px 25px;
   }
 }
 
@@ -1004,7 +1004,7 @@ $purple-hover: #5b3b52;
     #zum-toggle{
       display: block;
       width: 100%;
-      padding: 12px 5px;
+      padding: 12px 5px 2px 5px;
 
       &.zum-hidden {
         .open-text {
@@ -1022,12 +1022,15 @@ $purple-hover: #5b3b52;
           transition: all .3s ease-in-out 0s;
         }
         .arrow{
+          padding-top: 15px;
+          line-height: 1;
+          position: relative;
+          bottom: -10px;
           -webkit-transform: rotate(90deg);
           -moz-transform: rotate(90deg);
           -o-transform: rotate(90deg);
           -ms-transform: rotate(90deg);
           transform: rotate(90deg);
-          padding-top: 15px;
           -moz-transition: all .5s ease-in-out 0s;
           -webkit-transition: all .5s ease-in-out 0s;
           -o-transition: all .5s ease-in-out 0s;
@@ -1618,7 +1621,6 @@ $purple-hover: #5b3b52;
            .link-text {
              font-size: 16px;
              position: relative;
-             top: -15px
            }
          }
        }
@@ -1731,7 +1733,7 @@ $purple-hover: #5b3b52;
           width: 50%;
           display: inline-block;
           padding: 0;
-          .arrow {font-size: 30px;}
+          .arrow {font-size: 32px;}
         }
       }
       .main-navigation-wrapper {
@@ -1785,7 +1787,7 @@ $purple-hover: #5b3b52;
       // height: 72vh;
       // min-height: 650px;
       .logo-wrapper {
-        text-align: center;
+        text-align: left;
         .logo {
           /**/
         }
@@ -1796,7 +1798,7 @@ $purple-hover: #5b3b52;
           width: 25%;
           max-width: 140px;
           margin-right: 20%;
-          .arrow {font-size: 45px;}
+          .arrow {font-size: 32px;}
           .link-text {font-size: 18px;}
         }
       }
@@ -1809,7 +1811,7 @@ $purple-hover: #5b3b52;
                margin-left: 5px;
                margin-right: 5px;
                a {
-                 padding: 5px;
+                 padding: 1px 5px;
                  font-size: 14px;
                }
               }
@@ -1946,12 +1948,12 @@ $purple-hover: #5b3b52;
 @media (min-width: 1400px) {
   #screen1 .hero-image {
     .logo-wrapper .logo {
-      font-size: 40px;
+      font-size: 32px;
   }
   }
   #screen1 .hero-image .main-navigation-wrapper nav ul.nav li{
     a{
-      padding: 8px;
+      padding: 1px 5px;
       font-size: 13px;
     }
   }
