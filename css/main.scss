@@ -1806,8 +1806,7 @@ $purple-hover: #5b3b52;
 @media (min-width: 992px) {
   #screen1 {
     .hero-image {
-      // height:70vh;
-      // min-height: 580px;
+
       .logo-wrapper {
         .logo {
           /**/
@@ -2069,10 +2068,11 @@ $purple-hover: #5b3b52;
 #screen1 {
   height: 90vh; min-height: 700px;
   .hero-image {
-    height:70vh;
+    height:75vh;
     min-height: 520px;
   }
   .screen1-bottom {
+    padding-top: 15px;
     min-height: 162px;
   }
 }
