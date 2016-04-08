@@ -975,33 +975,42 @@ $green-hover: #456a4d;
 $purple: #815374;
 $purple-hover: #5b3b52;
 
-
-
-.logo-wrapper {
-  position: relative;
-  z-index: 999;
-  .logo {
-    font-family:'MetaBold', sans-serif;
-    color: #fff;
-    background-color: $black;
-    font-size: 32px;
-    padding: 5px 25px;
+.header-elements > .row {
+  height: 60px;
+  .logo-wrapper {
+    position: relative;
+    z-index: 999;
+    height: 100%;
+    .logo {
+      height: 100%;
+      font-family:'MetaBold', sans-serif;
+      color: #fff;
+      background-color: $black;
+      font-size: 32px;
+      padding: 5px 25px;
+    }
   }
 }
+
+
 
 .zum-shop-wrapper{
   position: relative;
   z-index: 999;
+  height: 100%;
   .zum-shop-button {
     width:100%;
-    height: auto;
+    height: 100%;
     padding: 10px 5px;
+    line-height: 1.4;
     font-family: 'MetaBold', sans-serif;
     -moz-transition: all .3s ease-in-out 0s;
     -webkit-transition: all .3s ease-in-out 0s;
     -o-transition: all .3s ease-in-out 0s;
     transition: all .3s ease-in-out 0s;
+    &:hover {background-color: $red !important;}
     #zum-toggle{
+      background-color: $red;
       display: block;
       width: 100%;
       padding: 12px 5px 2px 5px;
@@ -1025,7 +1034,7 @@ $purple-hover: #5b3b52;
           padding-top: 15px;
           line-height: 1;
           position: relative;
-          bottom: -10px;
+          bottom: -7px;
           -webkit-transform: rotate(90deg);
           -moz-transform: rotate(90deg);
           -o-transform: rotate(90deg);
@@ -1041,6 +1050,7 @@ $purple-hover: #5b3b52;
       &.zum-showed {
         .open-text {
           display: none;
+          margin-top: -10px;
           -moz-transition: all .3s ease-in-out 0s;
           -webkit-transition: all .3s ease-in-out 0s;
           -o-transition: all .3s ease-in-out 0s;
@@ -1048,6 +1058,7 @@ $purple-hover: #5b3b52;
         }
         .close-text {
           display: inline-block;
+          margin-top: -10px;
           -moz-transition: all .3s ease-in-out 0s;
           -webkit-transition: all .3s ease-in-out 0s;
           -o-transition: all .3s ease-in-out 0s;
@@ -1055,6 +1066,7 @@ $purple-hover: #5b3b52;
         }
         .arrow {
           padding-top: 15px;
+          margin-top: -25px;
           -moz-transition: all .5s ease-in-out 0s;
           -webkit-transition: all .5s ease-in-out 0s;
           -o-transition: all .5s ease-in-out 0s;
@@ -1192,6 +1204,18 @@ $purple-hover: #5b3b52;
   padding-right: 15%;
 }
 
+
+.menu-black-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: rgba(0,0,0,0.7);
+}
+
 #screen1 {
   .hero-image{
     position: relative;
@@ -1240,10 +1264,10 @@ $purple-hover: #5b3b52;
               top: 45%;
             }
             &.left i {
-              left: 40px;
+              left: 30px;
             }
             &.right i{
-              right: 40px;
+              right: 30px;
             }
           }
         }
@@ -1276,7 +1300,7 @@ $purple-hover: #5b3b52;
 
 
     .main-navigation-wrapper {
-
+      z-index: 999;
       nav{
         background: none;
         border: none;
@@ -1286,8 +1310,31 @@ $purple-hover: #5b3b52;
           border: none;
           border-radius: 0;
           margin-right: 0;
+          height: 30px;
           .icon-bar {
             background-color: #fff;
+            -moz-transition: all .3s ease-in-out 0s;
+            -webkit-transition: all .3s ease-in-out 0s;
+            -o-transition: all .3s ease-in-out 0s;
+            transition: all .3s ease-in-out 0s;
+          }
+        }
+        .navbar-toggle.active {
+          .icon-bar.top {
+            -moz-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+          .icon-bar.middle {
+            background-color: $black;
+          }
+          .icon-bar.bottom {
+            -moz-transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            margin-top: -7px;
           }
         }
         .navbar-collapse {
@@ -1670,48 +1717,60 @@ $purple-hover: #5b3b52;
 @media (min-width: 768px) {
    #screen1 {
      .hero-image {
-      //  height:55vh;
-      //  min-height: 550px;
-       .logo-wrapper {
-         text-align: right;
-         margin-top: 30px;
-         .logo {
-           width: auto;
+      .header-elements > .row {
+        height: 100px;
+        .logo-wrapper {
+          text-align: right;
+          height: 100%;
+          position: relative;
+          .logo {
+            height: auto;
+            position: absolute;
+            bottom: 0;
+            left: 15px;
+            width: auto;
             display: inline-block;
-         }
-       }
-       .zum-shop-wrapper{
-         .zum-shop-button {
-           padding-top: 20px;
-           position: relative;
-           .arrow {font-size: 18px; display: block;}
-           .link-text {
-             font-size: 16px;
-             position: relative;
-           }
-         }
-       }
-       .main-navigation-wrapper {
-         margin-top: 30px;
-         nav {
-           float: right;
-           ul.nav {
-             li {
-               margin-left: 5px;
-               margin-right: 5px;
-               ul.dropdown-menu {
-                 &.black-drop {
-                   /**/
-                 }
-               }
-                a {
-                  font-size: 15px;
-                  padding: 5px;
+            padding-top: 10px;
+          }
+        }
+        .zum-shop-wrapper{
+          height: 100%;
+          .zum-shop-button {
+            height: 100%;
+            padding-top: 10px;
+            position: relative;
+            .arrow {font-size: 18px; display: block;}
+            .link-text {
+              font-size: 16px;
+              position: relative;
+            }
+          }
+        }
+        .main-navigation-wrapper {
+          margin-top: 30px;
+          nav {
+            float: right;
+            ul.nav {
+              li {
+                margin-left: 5px;
+                margin-right: 5px;
+                ul.dropdown-menu {
+                  &.black-drop {
+                    /**/
+                  }
                 }
-             }
-           }
-         }
-       }
+                 a {
+                   font-size: 15px;
+                   padding: 5px;
+                 }
+              }
+            }
+          }
+        }
+      }
+
+
+
        #slider {
          .row {
            .carousel{
@@ -1822,7 +1881,7 @@ $purple-hover: #5b3b52;
           .arrow {font-size: 32px;}
         }
       }
-      .main-navigation-wrapper {
+      .header-elements > .row .main-navigation-wrapper {
         /**/
         nav {
           ul.nav {
@@ -1920,41 +1979,45 @@ $purple-hover: #5b3b52;
           }
         }
       }
-      .logo-wrapper {
-        text-align: left;
-        .logo {
-          /**/
-        }
-      }
-      .zum-shop-wrapper{
-        text-align: right;
-        .zum-shop-button {
-          width: 25%;
-          max-width: 140px;
-          margin-right: 20%;
-          .arrow {font-size: 32px;}
-          .link-text {font-size: 18px;}
-        }
-      }
-      .main-navigation-wrapper {
-        /**/
-        nav {
-          float: left;
-          ul.nav {
-            li {
-               margin-left: 5px;
-               margin-right: 5px;
-               a {
-                 padding: 1px 5px;
-                 font-size: 14px;
-               }
-              }
-
-            }
+      .header-elements>.row {
+        .logo-wrapper {
+          text-align: left;
+          .logo {
+            /**/
           }
         }
+        .zum-shop-wrapper{
+          text-align: right;
+          .zum-shop-button {
+            width: 25%;
+            max-width: 140px;
+            margin-right: 20%;
+            .arrow {font-size: 32px;}
+            .link-text {font-size: 18px;}
+          }
+        }
+        .main-navigation-wrapper {
+          /**/
+          nav {
+            float: left;
+            ul.nav {
+              li {
+                 margin-left: 5px;
+                 margin-right: 5px;
+                 a {
+                   padding: 1px 5px;
+                   font-size: 14px;
+                 }
+                }
+
+              }
+            }
+          }
+
+      }
+
         .brand-copy {
-          bottom: 10%;
+          bottom: 7%;
         }
       }
     }
@@ -2069,7 +2132,7 @@ $purple-hover: #5b3b52;
   height: 90vh; min-height: 700px;
   .hero-image {
     height:75vh;
-    min-height: 520px;
+    min-height: 600px;
   }
   .screen1-bottom {
     padding-top: 15px;

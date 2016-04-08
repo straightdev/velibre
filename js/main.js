@@ -8,6 +8,14 @@
     $('h4').fitText(1.5, { minFontSize: '18px', maxFontSize: '24px' });
     $(".screen-title").fitText(1.5, { minFontSize: '40px', maxFontSize: '90px' });
 
+
+    // Animate hamburger menu
+    $('.navbar-toggle').on('click', function(){
+      $(this).toggleClass("active");
+      $('.menu-black-overlay').fadeToggle();
+    });
+
+
     // arrows - smooth scrolling
     $('.screen-arr').on('click',function (e) {
 	    e.preventDefault();
