@@ -1196,22 +1196,83 @@ $purple-hover: #5b3b52;
   .hero-image{
     position: relative;
     min-height: 460px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-image: url('../images/hero-image.JPG');
+    // background-position: center center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-attachment: fixed;
+    // background-image: url('../images/hero-image.JPG');
+    #slider{
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      .row {
+        height: 100%;
+        .carousel {
+          position: static;
+          height: 100%;
+          .carousel-inner{
+            position: static;
+            height: 100%;
+            .item {
+              height: 100%;
+              img {
+                height: 100%;
+                width: auto;
+                min-width: 100%;
+                max-width: none;
+              }
+              .carousel-caption {
+                top: 20%;
+                left: 0;
+                right: 0;
+                h1 {font-size: 50px;}
+                h2 {font-size: 30px;}
+              }
+            }
+          }
+          .carousel-control {
+            i {
+              font-size: 60px;
+              position: absolute;;
+              top: 45%;
+            }
+            &.left i {
+              left: 40px;
+            }
+            &.right i{
+              right: 40px;
+            }
+          }
+        }
+
+      }
+
+
+    }
+    .brand-copy {
+      position: absolute;
+      bottom: 10%;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      .copyright-product {
+        display: inline-block;
+        background-color: #311f1f;
+        color: #fff;
+        font-size: 16px;
+        padding: 5px 20px;
+      }
+
+    }
+
     h1,h2, h3 {
       color: #fff;
     }
-    .copyright-product {
 
-      display: inline-block;
-      background-color: #311f1f;
-      color: #fff;
-      font-size: 16px;
-      padding: 5px 20px;
-    }
 
 
     .main-navigation-wrapper {
@@ -1651,6 +1712,26 @@ $purple-hover: #5b3b52;
            }
          }
        }
+       #slider {
+         .row {
+           .carousel{
+             .carousel-inner{
+               .item {
+                 .carousel-caption {
+                   top: 20%;
+                   left: 0;
+                   right: 0;
+                   h1 {font-size: 50px;}
+                   h2 {font-size: 25px;}
+                 }
+               }
+             }
+           }
+         }
+       }
+      .brand-copy {
+        bottom: 3%;
+      }
      }
      .screen1-bottom {
       //  height: 45vh;
@@ -1762,6 +1843,23 @@ $purple-hover: #5b3b52;
           }
         }
       }
+      #slider {
+        .row {
+          .carousel{
+            .carousel-inner{
+              .item {
+                .carousel-caption {
+                  top: 20%;
+                  left: 0;
+                  right: 0;
+                  h1 {font-size: 50px;}
+                  h2 {font-size: 25px;}
+                }
+              }
+            }
+          }
+        }
+      }
     }
   .screen1-bottom #quick-access {
     .quick-box {
@@ -1806,6 +1904,23 @@ $purple-hover: #5b3b52;
     .hero-image {
       // height: 72vh;
       // min-height: 650px;
+      #slider {
+        .row {
+          .carousel{
+            .carousel-inner{
+              .item {
+                .carousel-caption {
+                  top: 20%;
+                  left: 0;
+                  right: 0;
+                  h1 {font-size: 80px;}
+                  h2 {font-size: 30px;}
+                }
+              }
+            }
+          }
+        }
+      }
       .logo-wrapper {
         text-align: left;
         .logo {
@@ -1838,6 +1953,9 @@ $purple-hover: #5b3b52;
 
             }
           }
+        }
+        .brand-copy {
+          bottom: 10%;
         }
       }
     }
