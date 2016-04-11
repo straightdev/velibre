@@ -1617,7 +1617,7 @@ $purple-hover: #5b3b52;
             width: auto;
             float: none;
             margin: 5px 0 0 0;
-            padding: 9px;
+            padding: 12px 9px 9px 9px;
             font-size: 20px;
             font-family: 'BrandonTwo', sans-serif;
           }
@@ -1722,14 +1722,14 @@ $purple-hover: #5b3b52;
           position: relative;
           .smallbox-qty-header {
             position: absolute;
-            left: 150px;
+            left: 100px;
             .header-big-title, .header-small-title{
               margin-bottom:0;
             }
           }
           .bigbox-qty-header{
             position: absolute;
-            left: 300px;
+            left: 190px;
             .header-big-title, .header-small-title{
               margin-bottom:0;
             }
@@ -1746,12 +1746,13 @@ $purple-hover: #5b3b52;
             .title-description-wrapper {
               position: relative;
               .product-title {
+                font-size: 14px;
                 position: absolute;
                 top: -70px;
                 left: 0;
               }
               .product-description {
-                height: 87px;
+                font-size: 14px;
                 &:after {
                   top: -10px;
                 	left: 30px;
@@ -1773,14 +1774,33 @@ $purple-hover: #5b3b52;
           .smallbox-qty {
             border: none;
             padding-top: 2px;
+            min-width: 110px;
             position: absolute;
-            left: 150px;
+            left: 100px;
+            top: 30px;
 
           }
           .bigbox-qty {
             border: none;
+            min-width: 115px;
             position: absolute;
-            left: 300px;
+            left: 190px;
+            top:30px;
+          }
+          .qty-form {
+            .qtyminus, .qtyplus {
+              font-size: 18px;
+              width:10px;
+            }
+            &.big {
+              .qty {
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                font-size: 20px;
+              }
+
+            }
           }
         }
         .product-row.allegro .product-type .title-description-wrapper .product-description:after
