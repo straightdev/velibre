@@ -1742,7 +1742,7 @@ $purple-hover: #5b3b52;
             position: absolute;
             left: 0;
             right: 0;
-            bottom: 10px;
+            top: 75px;
             .title-description-wrapper {
               position: relative;
               .product-title {
@@ -1777,7 +1777,7 @@ $purple-hover: #5b3b52;
             min-width: 110px;
             position: absolute;
             left: 100px;
-            top: 30px;
+            top: 0;
 
           }
           .bigbox-qty {
@@ -1785,7 +1785,7 @@ $purple-hover: #5b3b52;
             min-width: 115px;
             position: absolute;
             left: 190px;
-            top:30px;
+            top: 2px;
           }
           .qty-form {
             .qtyminus, .qtyplus {
@@ -1817,7 +1817,10 @@ $purple-hover: #5b3b52;
       }
     }
   }
-
+  .header-elements>.row .logo-wrapper .logo {
+    font-size:25px;
+    padding: 15px 25px;
+  }
 }
 @media (min-width: 768px) {
    #screen1 {
@@ -1852,7 +1855,7 @@ $purple-hover: #5b3b52;
           }
         }
         .main-navigation-wrapper {
-          margin-top: 30px;
+          margin-top: 40px;
           nav {
             float: right;
             ul.nav {
