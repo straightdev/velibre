@@ -447,7 +447,19 @@
           <div class="zum-products  col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="row">
               <div class="selection col-xs-12 col-sm-12 col-md-12 col-lg-10">
-
+              <div class="row table-header hidden-xs hidden-sm hidden-md">
+                <div class="product-header col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                </div>
+                <div class="smallbox-qty-header col-xs-12 col-sm-4 col-md-4 col-lg-2">
+                  <p class="header-big-title">10er</p> <p class="header-small-title" >Box</p>
+                </div>
+                <div class="bigbox-qty-header col-xs-12 col-sm-4 col-md-4 col-lg-2">
+                  <p class="header-big-title">42er</p> <p class="header-small-title" >Box</p>
+                </div>
+                <div class="overview-header col-xs-12 col-sm-4 col-md-4 col-lg-2">
+                  <p class="header-big-title">Deine Auswahl</p> <p class="header-small-title" >&Uuml;bersicht</p>
+                </div>
+              </div>
               <div class="row product-row lento">
                 <div class="product-type col-xs-12 col-sm-12 col-md-12 col-lg-6">
                   <div class="title-description-wrapper clearfix">
@@ -458,7 +470,7 @@
                   </div>
                 </div>
                 <div class="smallbox-qty col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <p class="boxing-type"><span>10 er<span><span>&nbsp;Box</span></p>
+                  <p class="boxing-type hidden-xs"><span>10 er<span><span>&nbsp;Box</span></p>
                   <form class='qty-form' method='POST' action='#'>
                       <input type='button' value='-' class='qtyminus' field='quantity' />
                       <input type='text' name='quantity' value='0' class='qty' />
@@ -466,7 +478,7 @@
                   </form>
                 </div>
                 <div class="bigbox-qty col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <p class="boxing-type"><span>42 er<span><span>&nbsp;Box</span></p>
+                  <p class="boxing-type hidden-xs"><span>42 er<span><span>&nbsp;Box</span></p>
                   <form class='qty-form big' method='POST' action='#'>
                       <input type='button' value='-' class='qtyminus' field='quantity' />
                       <input type='text' name='quantity' value='0' class='qty' />
@@ -474,13 +486,25 @@
                   </form>
                 </div>
                 <div class="overview clearfix col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <div class="overview-selected">
-                    <span class="selected-qty">2</span>
-                    <span>x Lento (10er)</span>
+                  <div class="first-subtotal">
+                    <div class="overview-selected">
+                      <span class="selected-qty">2</span>
+                      <span>x Lento (10er)</span>
+                    </div>
+                    <div class="overview-total">
+                      <span> = </span>
+                      <span class="row-total">7.50</span>
+                    </div>
                   </div>
-                  <div class="overview-total">
-                    <span> = </span>
-                    <span class="row-total">7.50</span>
+                  <div class="second-subtotal">
+                    <div class="overview-selected">
+                      <span class="selected-qty">2</span>
+                      <span>x Lento (42er)</span>
+                    </div>
+                    <div class="overview-total">
+                      <span> = </span>
+                      <span class="row-total">7.50</span>
+                    </div>
                   </div>
                 </div>
               </div> <!-- /. product row -->
@@ -495,7 +519,7 @@
                   </div>
                 </div>
                 <div class="smallbox-qty col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <p class="boxing-type"><span>10 er<span><span>&nbsp;Box</span></p>
+                  <p class="boxing-type hidden-xs"><span>10 er<span><span>&nbsp;Box</span></p>
                   <form class='qty-form' method='POST' action='#'>
                       <input type='button' value='-' class='qtyminus' field='quantity' />
                       <input type='text' name='quantity' value='0' class='qty' />
@@ -503,7 +527,7 @@
                   </form>
                 </div>
                 <div class="bigbox-qty col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <p class="boxing-type"><span>42 er<span><span>&nbsp;Box</span></p>
+                  <p class="boxing-type hidden-xs"><span>42 er<span><span>&nbsp;Box</span></p>
                   <form class='qty-form big' method='POST' action='#'>
                       <input type='button' value='-' class='qtyminus' field='quantity' />
                       <input type='text' name='quantity' value='0' class='qty' />
@@ -511,13 +535,25 @@
                   </form>
                 </div>
                 <div class="overview clearfix col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <div class="overview-selected">
-                    <span class="selected-qty">2</span>
-                    <span>x Lento (10er)</span>
+                  <div class="first-subtotal">
+                    <div class="overview-selected">
+                      <span class="selected-qty">2</span>
+                      <span>x Allegro (10er)</span>
+                    </div>
+                    <div class="overview-total">
+                      <span> = </span>
+                      <span class="row-total">7.50</span>
+                    </div>
                   </div>
-                  <div class="overview-total">
-                    <span> = </span>
-                    <span class="row-total">7.50</span>
+                  <div class="second-subtotal">
+                    <div class="overview-selected">
+                      <span class="selected-qty">2</span>
+                      <span>x Allegro (42er)</span>
+                    </div>
+                    <div class="overview-total">
+                      <span> = </span>
+                      <span class="row-total">7.50</span>
+                    </div>
                   </div>
                 </div>
               </div> <!-- /. product row -->
@@ -532,7 +568,7 @@
                   </div>
                 </div>
                 <div class="smallbox-qty col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <p class="boxing-type"><span>10 er<span><span>&nbsp;Box</span></p>
+                  <p class="boxing-type hidden-xs"><span>10 er<span><span>&nbsp;Box</span></p>
                   <form class='qty-form' method='POST' action='#'>
                       <input type='button' value='-' class='qtyminus' field='quantity' />
                       <input type='text' name='quantity' value='0' class='qty' />
@@ -540,7 +576,7 @@
                   </form>
                 </div>
                 <div class="bigbox-qty col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <p class="boxing-type"><span>42 er<span><span>&nbsp;Box</span></p>
+                  <p class="boxing-type hidden-xs"><span>42 er<span><span>&nbsp;Box</span></p>
                   <form class='qty-form big' method='POST' action='#'>
                       <input type='button' value='-' class='qtyminus' field='quantity' />
                       <input type='text' name='quantity' value='0' class='qty' />
@@ -548,13 +584,25 @@
                   </form>
                 </div>
                 <div class="overview clearfix col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <div class="overview-selected">
-                    <span class="selected-qty">2</span>
-                    <span>x Lento (10er)</span>
+                  <div class="first-subtotal">
+                    <div class="overview-selected">
+                      <span class="selected-qty">2</span>
+                      <span>x Concerto (10er)</span>
+                    </div>
+                    <div class="overview-total">
+                      <span> = </span>
+                      <span class="row-total">7.50</span>
+                    </div>
                   </div>
-                  <div class="overview-total">
-                    <span> = </span>
-                    <span class="row-total">7.50</span>
+                  <div class="second-subtotal">
+                    <div class="overview-selected">
+                      <span class="selected-qty">2</span>
+                      <span>x Concerto (42er)</span>
+                    </div>
+                    <div class="overview-total">
+                      <span> = </span>
+                      <span class="row-total">7.50</span>
+                    </div>
                   </div>
                 </div>
               </div> <!-- /. product row -->
@@ -570,7 +618,7 @@
                   </div>
                 </div>
                 <div class="smallbox-qty col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <p class="boxing-type"><span>10 er<span><span>&nbsp;Box</span></p>
+                  <p class="boxing-type hidden-xs"><span>10 er<span><span>&nbsp;Box</span></p>
                   <form class='qty-form' method='POST' action='#'>
                       <input type='button' value='-' class='qtyminus' field='quantity' />
                       <input type='text' name='quantity' value='0' class='qty' />
@@ -578,7 +626,7 @@
                   </form>
                 </div>
                 <div class="bigbox-qty col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <p class="boxing-type"><span>42 er<span><span>&nbsp;Box</span></p>
+                  <p class="boxing-type hidden-xs"><span>42 er<span><span>&nbsp;Box</span></p>
                   <form class='qty-form big' method='POST' action='#'>
                       <input type='button' value='-' class='qtyminus' field='quantity' />
                       <input type='text' name='quantity' value='0' class='qty' />
@@ -586,13 +634,25 @@
                   </form>
                 </div>
                 <div class="overview clearfix col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <div class="overview-selected">
-                    <span class="selected-qty">2</span>
-                    <span>x Lento (10er)</span>
+                  <div class="first-subtotal">
+                    <div class="overview-selected">
+                      <span class="selected-qty">2</span>
+                      <span>x Presto (10er)</span>
+                    </div>
+                    <div class="overview-total">
+                      <span> = </span>
+                      <span class="row-total">7.50</span>
+                    </div>
                   </div>
-                  <div class="overview-total">
-                    <span> = </span>
-                    <span class="row-total">7.50</span>
+                  <div class="second-subtotal">
+                    <div class="overview-selected">
+                      <span class="selected-qty">2</span>
+                      <span>x Presto (42er)</span>
+                    </div>
+                    <div class="overview-total">
+                      <span> = </span>
+                      <span class="row-total">7.50</span>
+                    </div>
                   </div>
                 </div>
               </div> <!-- /. product row -->
@@ -607,7 +667,7 @@
                   </div>
                 </div>
                 <div class="smallbox-qty col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <p class="boxing-type"><span>10 er<span><span>&nbsp;Box</span></p>
+                  <p class="boxing-type hidden-xs"><span>10 er<span><span>&nbsp;Box</span></p>
                   <form class='qty-form' method='POST' action='#'>
                       <input type='button' value='-' class='qtyminus' field='quantity' />
                       <input type='text' name='quantity' value='0' class='qty' />
@@ -615,7 +675,7 @@
                   </form>
                 </div>
                 <div class="bigbox-qty col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <p class="boxing-type"><span>42 er<span><span>&nbsp;Box</span></p>
+                  <p class="boxing-type hidden-xs"><span>42 er<span><span>&nbsp;Box</span></p>
                   <form class='qty-form big' method='POST' action='#'>
                       <input type='button' value='-' class='qtyminus' field='quantity' />
                       <input type='text' name='quantity' value='0' class='qty' />
@@ -623,13 +683,25 @@
                   </form>
                 </div>
                 <div class="overview clearfix col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <div class="overview-selected">
-                    <span class="selected-qty">2</span>
-                    <span>x Lento (10er)</span>
+                  <div class="first-subtotal">
+                    <div class="overview-selected">
+                      <span class="selected-qty">2</span>
+                      <span>x Fortis (10er)</span>
+                    </div>
+                    <div class="overview-total">
+                      <span> = </span>
+                      <span class="row-total">7.50</span>
+                    </div>
                   </div>
-                  <div class="overview-total">
-                    <span> = </span>
-                    <span class="row-total">7.50</span>
+                  <div class="second-subtotal">
+                    <div class="overview-selected">
+                      <span class="selected-qty">2</span>
+                      <span>x Fortis (42er)</span>
+                    </div>
+                    <div class="overview-total">
+                      <span> = </span>
+                      <span class="row-total">7.50</span>
+                    </div>
                   </div>
                 </div>
               </div> <!-- /. product row -->
@@ -644,7 +716,7 @@
                   </div>
                 </div>
                 <div class="smallbox-qty col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <!-- <p class="boxing-type"><span>10 er<span><span>&nbsp;Box</span></p>
+                  <!-- <p class="boxing-type hidden-xs"><span>10 er<span><span>&nbsp;Box</span></p>
                   <form class='qty-form' method='POST' action='#'>
                       <input type='button' value='-' class='qtyminus' field='quantity' />
                       <input type='text' name='quantity' value='0' class='qty' />
@@ -652,7 +724,7 @@
                   </form> -->
                 </div>
                 <div class="bigbox-qty col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <p class="boxing-type"><span>42 er<span><span>&nbsp;Box</span></p>
+                  <p class="boxing-type hidden-xs"><span>42 er<span><span>&nbsp;Box</span></p>
                   <form class='qty-form big' method='POST' action='#'>
                       <input type='button' value='-' class='qtyminus' field='quantity' />
                       <input type='text' name='quantity' value='0' class='qty' />
@@ -660,13 +732,15 @@
                   </form>
                 </div>
                 <div class="overview clearfix col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <div class="overview-selected">
-                    <span class="selected-qty">2</span>
-                    <span>x Lento (10er)</span>
-                  </div>
-                  <div class="overview-total">
-                    <span> = </span>
-                    <span class="row-total">7.50</span>
+                  <div class="second-subtotal mix-subtotal">
+                    <div class="overview-selected">
+                      <span class="selected-qty">2</span>
+                      <span>x Mix (42er)</span>
+                    </div>
+                    <div class="overview-total">
+                      <span> = </span>
+                      <span class="row-total">7.50</span>
+                    </div>
                   </div>
                 </div>
               </div> <!-- /. product row -->
@@ -676,7 +750,8 @@
             </div> <!-- selection -->
 
             <div class="cart-total col-xs-12 col-sm-12 col-md-12 col-lg-2">
-              <p class="cart-total-title"> Dein Warenkorb </p>
+              <p class="header-big-title"> Dein Warenkorb </p>
+              <p class="header-small-title">Angabe in Euro</p>
               <p class="cart-total-content clearfix">
                 <span class="col1"> Zwischensumme </span>
                 <span class="col2"> = 30.00 </span>

@@ -1640,7 +1640,6 @@ $purple-hover: #5b3b52;
       }
 
       .overview {
-        line-height:80px;
         text-align: center;
         .overview-selected{
           display: inline-block;
@@ -1847,8 +1846,8 @@ $purple-hover: #5b3b52;
 
          .overview {
            font-size: 20px;
-           line-height: 110px;
            text-align: center;
+           padding-top: 35px;
            .overview-selected {
              float: none;
            }
@@ -2037,13 +2036,24 @@ $purple-hover: #5b3b52;
     }
 
 
+.header-big-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
 
+.header-small-title {
+  font-size: 14px;
+}
 
   #zum-shop {
     padding-left: 2%;
     padding-right: 2%;
     .product-row {margin-bottom: 0;}
     .zum-products {
+      .table-header{
+          /**/
+      }
       .selection {
         .product-type{
           .title-description-wrapper{
@@ -2081,10 +2091,10 @@ $purple-hover: #5b3b52;
 
 
         .overview {
+          padding-top: 6px;
           height: 60px;
-          line-height: 60px;
           text-align: left;
-          font-size: 12px;
+          font-size: 11px;
           border-right: 1px solid gray;
           .overview-selected{
             float: left;
@@ -2092,16 +2102,20 @@ $purple-hover: #5b3b52;
           .overview-total {
             float: right;
           }
+          .mix-subtotal {
+            padding-top: 8px;
+          }
         }
 
 
       }
       .cart-total {
-        .cart-total-title {
-          font-size: 20px;
-          font-weight: bold;
-        }
+        // .cart-total-title {
+        //   font-size: 20px;
+        //   font-weight: bold;
+        // }
         .cart-total-content {
+          margin-top: 16px;
           font-size: 12px;
           .col1 {float:left;}
           .col2 {float: right;}
