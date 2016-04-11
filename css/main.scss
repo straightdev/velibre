@@ -116,7 +116,7 @@ html {
 body {
   font-family: 'MetaBook', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
-  line-height:1.8;
+  line-height:1.4;
   color: #333;
   background-color: #fff0d6;
   .container {
@@ -165,7 +165,7 @@ hr {
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: 'BrandonTwo', sans-serif;
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 0.9;
   color: inherit;
 }
 
@@ -1115,7 +1115,8 @@ $purple-hover: #5b3b52;
 
 .x-separator {
   font-family: 'BrandonExtras', sans-serif;
-  padding: 0;
+  padding-top: 5px;
+  padding-bottom: 0;
   margin: 0;
   font-weight: bold;
   font-size: 50px !important;
@@ -1212,7 +1213,7 @@ $purple-hover: #5b3b52;
   right: 0;
   left: 0;
   bottom: 0;
-  z-index: 999;
+  z-index: 9;
   background-color: rgba(0,0,0,0.7);
 }
 
@@ -1300,7 +1301,7 @@ $purple-hover: #5b3b52;
 
 
     .main-navigation-wrapper {
-      z-index: 999;
+      z-index: 10;
       nav{
         background: none;
         border: none;
@@ -1380,11 +1381,11 @@ $purple-hover: #5b3b52;
               }
               &.red-drop {
                 background-color: rgba(190,80,85,0.9);
-                width: 230px;
+                width: 100%;
               }
               &.black-drop{
                 background-color: rgba(40,40,39,0.9);
-                width: 230px;
+                width: 100%;
               }
               .drop-title {
                 display: block;
@@ -1428,7 +1429,6 @@ $purple-hover: #5b3b52;
   }
   .screen1-bottom {
     #quick-access{
-      padding-top: 20px 15px;
       .quick-box {
         text-align: center;
         padding-bottom: 5px;
@@ -1492,10 +1492,10 @@ $purple-hover: #5b3b52;
 }
 
 #screen2 {
+  padding: 100px 0px;
   h1 { margin:0; }
-  padding: 20px 0;
   .screen-title { color: $purple;}
-  .x-separator { color: $green; padding-bottom: 20px;}
+  .x-separator { color: $green; padding-bottom: 0px;}
   .screen-content {
     .screen2-link { color: $green; font-weight: bold;}
   }
@@ -1505,7 +1505,7 @@ $purple-hover: #5b3b52;
   h1 { margin:0; }
   padding: 20px 0;
   .screen-title { color: $yellow; }
-  .x-separator { color: $yellow; padding-bottom: 20px;}
+  .x-separator { color: $yellow; padding-bottom: 0px;}
   .screen-content{
     display: inline-block;
     text-align: left;
@@ -1538,7 +1538,7 @@ $purple-hover: #5b3b52;
   h1 { margin:0; }
   padding: 20px 0;
   .screen-title { color: $black;}
-  .x-separator { color: $yellow; padding-bottom: 20px;}
+  .x-separator { color: $yellow; padding-bottom: 0px;}
   .screen-content {
     .screen2-link { color: $black; font-weight: normal;}
   }
@@ -1756,7 +1756,10 @@ $purple-hover: #5b3b52;
                 margin-right: 5px;
                 ul.dropdown-menu {
                   &.black-drop {
-                    /**/
+                    width: 230px;
+                  }
+                  &.red-drop {
+                    width: 230px;
                   }
                 }
                  a {
@@ -1860,7 +1863,9 @@ $purple-hover: #5b3b52;
      }
 
    }
-
+  #screen2 {
+    padding: 0;
+  }
 }
 @media (min-width: 992px) {
   #screen1 {
@@ -2127,9 +2132,9 @@ $purple-hover: #5b3b52;
 
 /* Full height page cards*/
 
-.navigation-arrow {height: 15vh; max-height: 110px;}
+.navigation-arrow {height: 15vh; min-height: 110px;}
 #screen1 {
-  height: 90vh; min-height: 700px;
+  height: 90vh; min-height: 730px;
   .hero-image {
     height:75vh;
     min-height: 600px;
