@@ -34,129 +34,197 @@
     <link rel="stylesheet" href="css/main.min.css">
 
   </head>
-  <body class="inner">
+  <body class="home">
     <section id="screen1" class="site-header snap container text-center" role="banner">
       <div class="row">
         <div class="hero-image col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <div class="row">
-            <div class ="zum-shop-wrapper col-xs-6 col-sm-2 col-md-3 col-lg-5">
-              <div class="zum-shop-button red-button">
-                <a href="#" id="zum-toggle" class="zum-hidden">
-                  <div class="arrow hidden-xs">l</div>
-                  <div class="link-text open-text"> Zum Shop </div>
-                  <div class="link-text close-text"> Shop schließen </div>
-                </a>
+          <div class="menu-black-overlay"></div>
+          <div id="slider" class="slider-wrapper container">
+           <div class="row">
+             <div id="image-carousel" class="carousel slide " data-ride="carousel">
+               <div class="carousel-inner" role="listbox">
+                 <div class="item active">
+                   <img src="images/hero-image.JPG" alt="">
+                   <div class="carousel-caption ">
+                     <h1 class="headline1">Dein <br> KafFeE</h1>
+                     <h3 class="x-separator hidden-xs">+</h3>
+                     <h2 class="headline2">biolOgIsch <br>  AbBauBare <br> kapseln </h2>
+                   </div>
+                 </div>
+                 <div class="item">
+                   <img src="images/hero-image.JPG" alt="">
+                   <div class="carousel-caption ">
+                     <h1 class="headline1">Dein <br> KafFeE</h1>
+                     <h3 class="x-separator hidden-xs">+</h3>
+                     <h2 class="headline2">biolOgIsch <br>  AbBauBare <br> kapseln </h2>
+                   </div>
+                 </div>
+               </div>
+               <!-- Controls -->
+               <a class="left carousel-control" href="#image-carousel" role="button" data-slide="prev">
+                 <i class="fa fa-angle-left"></i>
+                 <span class="sr-only">Previous</span>
+               </a>
+               <a class="right carousel-control" href="#image-carousel" role="button" data-slide="next">
+                 <i class="fa fa-angle-right"></i>
+                 <span class="sr-only">Next</span>
+               </a>
+             </div> <!-- /. carousel -->
+           </div> <!-- /. row -->
+         </div>
+
+          <div class="header-elements">
+            <div class="row">
+              <div class ="zum-shop-wrapper col-xs-6 col-sm-2 col-md-3 col-lg-5">
+                <div class="zum-shop-button red-button">
+                  <a href="#" id="zum-toggle" class="zum-hidden">
+                    <div class="arrow hidden-xs">l</div>
+                    <div class="link-text open-text"> Zum Shop </div>
+                    <div class="link-text close-text"> Shop schließen </div>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class ="logo-wrapper col-xs-6 col-sm-2 col-md-2 col-lg-2">
-              <div class="logo"> velibre </div>
-            </div>
-            <div class ="main-navigation-wrapper col-xs-12 col-sm-8 col-md-7 col-lg-5">
-              <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                  <!-- Brand and toggle get grouped for better mobile display -->
-                  <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                    </button>
-                  </div>
+              <div class ="logo-wrapper col-xs-6 col-sm-2 col-md-2 col-lg-2">
+                <div class="logo"> velibre </div>
+              </div>
+              <div class ="main-navigation-wrapper col-xs-12 col-sm-8 col-md-7 col-lg-5">
+                <nav class="navbar navbar-default">
+                  <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar top"></span>
+                        <span class="icon-bar middle"></span>
+                        <span class="icon-bar bottom"></span>
+                      </button>
+                    </div>
 
-                  <!-- Collect the nav links, forms, and other content for toggling -->
-                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle red-button capsule-button" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dein Warenkorb: leer <img class="capsule" src="images/capsule.png"> </a>
-                        <ul class="dropdown-menu red-drop">
-                          <span class="drop-title">Deine Bestellung:</span>
-                          <div class="item">
-                            <span class="item-qty">2<span>x&nbsp;</span></span>
-                            <span class="item-name">Lento</span>
-                            <span class="item-price">7.80<span class="currency">&nbsp;Euro</span></span>
-                          </div>
-                          <div class="item">
-                            <span class="item-qty">2<span>x&nbsp;</span></span>
-                            <span class="item-name">Lento</span>
-                            <span class="item-price">7.80<span class="currency">&nbsp;Euro</span></span>
-                          </div>
-                          <div class="item">
-                            <span class="item-qty">2<span>x&nbsp;</span></span>
-                            <span class="item-name">Lento</span>
-                            <span class="item-price">7.80<span class="currency">&nbsp;Euro</span></span>
-                          </div>
-                          <div class="item">
-                            <span class="item-qty">2<span>x&nbsp;</span></span>
-                            <span class="item-name">Lento</span>
-                            <span class="item-price">7.80<span class="currency">&nbsp;Euro</span></span>
-                          </div>
-                          <li role="separator" class="divider"></li>
-                          <span class="drop-title">Summe (ohne Versandkosten)</span>
-                          <span class="drop-total">39.00<span class="currency">&nbsp;Euro</span></span>
-                          <a href="#" class="black-button">Zur Kasse</a>
-                          </p>
-                        </ul>
-                      </li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle black-button" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Log-In </a>
-                        <ul class="dropdown-menu black-drop">
-                          <span class="drop-title">Bitte melde Dich an:</span>
-                          <form class="login-form">
-                            <fieldset class="login-form">
-                              <input type="email" required="true" class="form-control" id="login-email" placeholder="E-Mail-Adresse">
-                            </fieldset>
-                            <div class="login-form">
-                              <input type="password" class="form-control" id="pwd" placeholder="Passwort">
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle red-button capsule-button" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dein Warenkorb: leer <img class="capsule" src="images/capsule.png"> </a>
+                          <ul class="dropdown-menu red-drop">
+                            <span class="drop-title">Deine Bestellung:</span>
+                            <div class="item">
+                              <span class="item-qty">2<span>x&nbsp;</span></span>
+                              <span class="item-name">Lento</span>
+                              <span class="item-price">7.80<span class="currency">&nbsp;Euro</span></span>
                             </div>
-                            <button type="submit" class="white-button">Weiter</button>
+                            <div class="item">
+                              <span class="item-qty">2<span>x&nbsp;</span></span>
+                              <span class="item-name">Lento</span>
+                              <span class="item-price">7.80<span class="currency">&nbsp;Euro</span></span>
+                            </div>
+                            <div class="item">
+                              <span class="item-qty">2<span>x&nbsp;</span></span>
+                              <span class="item-name">Lento</span>
+                              <span class="item-price">7.80<span class="currency">&nbsp;Euro</span></span>
+                            </div>
+                            <div class="item">
+                              <span class="item-qty">2<span>x&nbsp;</span></span>
+                              <span class="item-name">Lento</span>
+                              <span class="item-price">7.80<span class="currency">&nbsp;Euro</span></span>
+                            </div>
                             <li role="separator" class="divider"></li>
-                          </form>
-                          <span class="drop-title forgot-pass-title">Passwort vergessen? Kein Problem:</span>
-                          <button class="white-button">Passwort zurücksetzen</button>
-                          <li role="separator" class="divider"></li>
-                          <span class="drop-title register-title">Du hast noch gar kein Konto? </span>
-                          <button class="white-button">Registrieren</button>
-                        </ul>
-                      </li>
-                      <li><a href="#" class="black-button">Über velibre</a></li>
-                      <li><a href="#" class="black-button">Kontakt</a></li>
-                    </ul>
-                  </div><!-- /.navbar-collapse -->
-                </div><!-- /.container-fluid -->
-              </nav>
+                            <span class="drop-title">Summe (ohne Versandkosten)</span>
+                            <span class="drop-total">39.00<span class="currency">&nbsp;Euro</span></span>
+                            <a href="#" class="black-button">Zur Kasse</a>
+                            </p>
+                          </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle black-button" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Log-In </a>
+                          <ul class="dropdown-menu black-drop">
+                            <span class="drop-title">Bitte melde Dich an:</span>
+                            <form class="login-form">
+                              <fieldset class="login-form">
+                                <input type="email" required="true" class="form-control" id="login-email" placeholder="E-Mail-Adresse">
+                              </fieldset>
+                              <div class="login-form">
+                                <input type="password" class="form-control" id="pwd" placeholder="Passwort">
+                              </div>
+                              <button type="submit" class="white-button">Weiter</button>
+                              <li role="separator" class="divider"></li>
+                            </form>
+                            <span class="drop-title forgot-pass-title">Passwort vergessen? Kein Problem:</span>
+                            <button class="white-button">Passwort zurücksetzen</button>
+                            <li role="separator" class="divider"></li>
+                            <span class="drop-title register-title">Du hast noch gar kein Konto? </span>
+                            <button class="white-button">Registrieren</button>
+                          </ul>
+                        </li>
+                        <li><a href="#" class="black-button">Über velibre</a></li>
+                        <li><a href="#" class="black-button">Kontakt</a></li>
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+                  </div><!-- /.container-fluid -->
+                </nav>
 
-            </div>
+              </div>
 
 
-          <div class="row">
-            <div class="hero title col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <h1 id="responsive-headline1">Dein <br> KafFeE</h1>
-              <h3 class="x-separator hidden-xs">+</h3>
-              <h2 id="responsive-headline2" class="hidden-xs">biolOgIsch <br>  AbBauBare <br> kapseln </h2>
 
-            </div>
           </div> <!-- /. row -->
+        </div> <!-- /. header-elements -->
 
-          <div class=row>
-                <p><span class="copyright-product">Nespresso&reg; * kompatibel</span></p>
-          </div>
-        </div> <!-- /. row -->
+        <div class="brand-copy" >
+              <p><span class="copyright-product">Nespresso&reg; * kompatibel</span></p>
+        </div>
 
-        </div> <!-- /. row -->
+      </div><!-- /. hero-image -->
+    </div> <!-- /. row -->
 
-        </div> <!-- /. row -->
-      </div> <!-- /. hero-inage -->
+      </div> <!-- /. row -->
+
+
+
+
 
       <div class="screen1-bottom clearfix">
         <div class="row">
           <div id="quick-access" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-
-            <h2> Page Intro Here </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis convallis ipsum id aliquet. Nunc metus urna, pretium in accumsan et, condimentum vel metus. Sed eget maximus arcu. Suspendisse et tellus tellus. Fusce elementum porta nisl sed interdum. Nunc non quam et leo pulvinar pharetra.
-            </p>
-
+            <div class="quick-box box1 col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="box-content">
+                <h4>velibre<br>bestellen</h4>
+                <h4 class="x-separator-small">+</h4>
+              </div>
+              <div class="box-cta">
+                <a id="zum-toggle2" class="zum-hidden">Zum Shop</a>
+              </div>
+              <div class="box-separator hidden-md hidden-lg"></div>
+            </div>
+            <div class="quick-box box2 col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="box-content">
+                <h4>unSEre<br>kafFeEs</h4>
+                <h4 class="x-separator-small">+</h4>
+              </div>
+              <div class="box-cta">
+                <a class="" href="index.html#screen1-arrow">Zu den Blends</a>
+              </div>
+              <div class="box-separator hidden-md hidden-lg"></div>
+            </div>
+            <div class="quick-box box3 col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="box-content">
+                <h4>unser<br>beitRag</h4>
+                <h4 class="x-separator-small">+</h4>
+              </div>
+              <div class="box-cta">
+                <a class="" href="index.html#screen2-arrow">Zur Kapsel</a>
+              </div>
+              <div class="box-separator hidden-md hidden-sm hidden-lg"></div>
+            </div>
+            <div class="quick-box box4 col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="box-content">
+                <h4>nespres ... ?<br>ja, passt!</h4>
+                <h4 class="x-separator-small">+</h4>
+              </div>
+              <div class="box-cta">
+                <a class="" href="index.html#screen3-arrow">Zur Info</a>
+              </div>
+              <div class="box-separator hidden-xs hidden-sm hidden-md hidden-lg"></div>
+            </div>
           </div> <!-- /. quick-access -->
           </div><!-- /.row -->
 
@@ -173,7 +241,7 @@
     </section>
 
 
-    <section id="content" class=" site-header container text-center" role="banner">
+    <section id="content" class=" site-header container text-center snap" role="banner">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <h3 class="screen-title">wir lieben kaffee<br>und unsere erde</h3>
@@ -240,7 +308,19 @@
           <div class="zum-products  col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="row">
               <div class="selection col-xs-12 col-sm-12 col-md-12 col-lg-10">
-
+              <div class="row table-header">
+                <div class="product-header col-xs-12 col-sm-12 col-md-12 col-lg-6 hidden-xs hidden-sm hidden-md">
+                </div>
+                <div class="smallbox-qty-header col-xs-4 col-sm-4 col-md-4 col-lg-2 hidden-sm hidden-md">
+                  <p class="header-big-title">10er</p> <p class="header-small-title" >Box</p>
+                </div>
+                <div class="bigbox-qty-header col-xs-4 col-sm-4 col-md-4 col-lg-2 hidden-sm hidden-md">
+                  <p class="header-big-title">42er</p> <p class="header-small-title" >Box</p>
+                </div>
+                <div class="overview-header col-xs-12 col-sm-4 col-md-4 col-lg-2 hidden-xs hidden-sm hidden-md">
+                  <p class="header-big-title">Deine Auswahl</p> <p class="header-small-title" >&Uuml;bersicht</p>
+                </div>
+              </div>
               <div class="row product-row lento">
                 <div class="product-type col-xs-12 col-sm-12 col-md-12 col-lg-6">
                   <div class="title-description-wrapper clearfix">
@@ -250,30 +330,42 @@
                     <div class="product-title"> Lento </div>
                   </div>
                 </div>
-                <div class="smallbox-qty col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <p class="boxing-type"><span>10 er<span><span>&nbsp;Box</span></p>
+                <div class="smallbox-qty col-xs-4 col-sm-4 col-md-4 col-lg-2">
+                  <p class="boxing-type hidden-xs"><span>10 er<span><span>&nbsp;Box</span></p>
                   <form class='qty-form' method='POST' action='#'>
                       <input type='button' value='-' class='qtyminus' field='quantity' />
                       <input type='text' name='quantity' value='0' class='qty' />
                       <input type='button' value='+' class='qtyplus' field='quantity' />
                   </form>
                 </div>
-                <div class="bigbox-qty col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <p class="boxing-type"><span>42 er<span><span>&nbsp;Box</span></p>
+                <div class="bigbox-qty col-xs-4 col-sm-4 col-md-4 col-lg-2">
+                  <p class="boxing-type hidden-xs"><span>42 er<span><span>&nbsp;Box</span></p>
                   <form class='qty-form big' method='POST' action='#'>
                       <input type='button' value='-' class='qtyminus' field='quantity' />
                       <input type='text' name='quantity' value='0' class='qty' />
                       <input type='button' value='+' class='qtyplus' field='quantity' />
                   </form>
                 </div>
-                <div class="overview clearfix col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <div class="overview-selected">
-                    <span class="selected-qty">2</span>
-                    <span>x Lento (10er)</span>
+                <div class="overview clearfix hidden-xs col-xs-12 col-sm-4 col-md-4 col-lg-2">
+                  <div class="first-subtotal">
+                    <div class="overview-selected">
+                      <span class="selected-qty">2</span>
+                      <span>x Lento (10er)</span>
+                    </div>
+                    <div class="overview-total">
+                      <span> = </span>
+                      <span class="row-total">7.50</span>
+                    </div>
                   </div>
-                  <div class="overview-total">
-                    <span> = </span>
-                    <span class="row-total">7.50</span>
+                  <div class="second-subtotal">
+                    <div class="overview-selected">
+                      <span class="selected-qty">2</span>
+                      <span>x Lento (42er)</span>
+                    </div>
+                    <div class="overview-total">
+                      <span> = </span>
+                      <span class="row-total">7.50</span>
+                    </div>
                   </div>
                 </div>
               </div> <!-- /. product row -->
@@ -287,30 +379,42 @@
                     <div class="product-title"> Allegro </div>
                   </div>
                 </div>
-                <div class="smallbox-qty col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <p class="boxing-type"><span>10 er<span><span>&nbsp;Box</span></p>
+                <div class="smallbox-qty col-xs-4 col-sm-4 col-md-4 col-lg-2">
+                  <p class="boxing-type hidden-xs"><span>10 er<span><span>&nbsp;Box</span></p>
                   <form class='qty-form' method='POST' action='#'>
                       <input type='button' value='-' class='qtyminus' field='quantity' />
                       <input type='text' name='quantity' value='0' class='qty' />
                       <input type='button' value='+' class='qtyplus' field='quantity' />
                   </form>
                 </div>
-                <div class="bigbox-qty col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <p class="boxing-type"><span>42 er<span><span>&nbsp;Box</span></p>
+                <div class="bigbox-qty col-xs-4 col-sm-4 col-md-4 col-lg-2">
+                  <p class="boxing-type hidden-xs"><span>42 er<span><span>&nbsp;Box</span></p>
                   <form class='qty-form big' method='POST' action='#'>
                       <input type='button' value='-' class='qtyminus' field='quantity' />
                       <input type='text' name='quantity' value='0' class='qty' />
                       <input type='button' value='+' class='qtyplus' field='quantity' />
                   </form>
                 </div>
-                <div class="overview clearfix col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <div class="overview-selected">
-                    <span class="selected-qty">2</span>
-                    <span>x Lento (10er)</span>
+                <div class="overview clearfix hidden-xs col-xs-12 col-sm-4 col-md-4 col-lg-2">
+                  <div class="first-subtotal">
+                    <div class="overview-selected">
+                      <span class="selected-qty">2</span>
+                      <span>x Allegro (10er)</span>
+                    </div>
+                    <div class="overview-total">
+                      <span> = </span>
+                      <span class="row-total">7.50</span>
+                    </div>
                   </div>
-                  <div class="overview-total">
-                    <span> = </span>
-                    <span class="row-total">7.50</span>
+                  <div class="second-subtotal">
+                    <div class="overview-selected">
+                      <span class="selected-qty">2</span>
+                      <span>x Allegro (42er)</span>
+                    </div>
+                    <div class="overview-total">
+                      <span> = </span>
+                      <span class="row-total">7.50</span>
+                    </div>
                   </div>
                 </div>
               </div> <!-- /. product row -->
@@ -324,30 +428,42 @@
                     <div class="product-title"> Concerto </div>
                   </div>
                 </div>
-                <div class="smallbox-qty col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <p class="boxing-type"><span>10 er<span><span>&nbsp;Box</span></p>
+                <div class="smallbox-qty col-xs-4 col-sm-4 col-md-4 col-lg-2">
+                  <p class="boxing-type hidden-xs"><span>10 er<span><span>&nbsp;Box</span></p>
                   <form class='qty-form' method='POST' action='#'>
                       <input type='button' value='-' class='qtyminus' field='quantity' />
                       <input type='text' name='quantity' value='0' class='qty' />
                       <input type='button' value='+' class='qtyplus' field='quantity' />
                   </form>
                 </div>
-                <div class="bigbox-qty col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <p class="boxing-type"><span>42 er<span><span>&nbsp;Box</span></p>
+                <div class="bigbox-qty col-xs-4 col-sm-4 col-md-4 col-lg-2">
+                  <p class="boxing-type hidden-xs"><span>42 er<span><span>&nbsp;Box</span></p>
                   <form class='qty-form big' method='POST' action='#'>
                       <input type='button' value='-' class='qtyminus' field='quantity' />
                       <input type='text' name='quantity' value='0' class='qty' />
                       <input type='button' value='+' class='qtyplus' field='quantity' />
                   </form>
                 </div>
-                <div class="overview clearfix col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <div class="overview-selected">
-                    <span class="selected-qty">2</span>
-                    <span>x Lento (10er)</span>
+                <div class="overview clearfix hidden-xs col-xs-12 col-sm-4 col-md-4 col-lg-2">
+                  <div class="first-subtotal">
+                    <div class="overview-selected">
+                      <span class="selected-qty">2</span>
+                      <span>x Concerto (10er)</span>
+                    </div>
+                    <div class="overview-total">
+                      <span> = </span>
+                      <span class="row-total">7.50</span>
+                    </div>
                   </div>
-                  <div class="overview-total">
-                    <span> = </span>
-                    <span class="row-total">7.50</span>
+                  <div class="second-subtotal">
+                    <div class="overview-selected">
+                      <span class="selected-qty">2</span>
+                      <span>x Concerto (42er)</span>
+                    </div>
+                    <div class="overview-total">
+                      <span> = </span>
+                      <span class="row-total">7.50</span>
+                    </div>
                   </div>
                 </div>
               </div> <!-- /. product row -->
@@ -362,30 +478,42 @@
                     <div class="product-title"> Presto </div>
                   </div>
                 </div>
-                <div class="smallbox-qty col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <p class="boxing-type"><span>10 er<span><span>&nbsp;Box</span></p>
+                <div class="smallbox-qty col-xs-4 col-sm-4 col-md-4 col-lg-2">
+                  <p class="boxing-type hidden-xs"><span>10 er<span><span>&nbsp;Box</span></p>
                   <form class='qty-form' method='POST' action='#'>
                       <input type='button' value='-' class='qtyminus' field='quantity' />
                       <input type='text' name='quantity' value='0' class='qty' />
                       <input type='button' value='+' class='qtyplus' field='quantity' />
                   </form>
                 </div>
-                <div class="bigbox-qty col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <p class="boxing-type"><span>42 er<span><span>&nbsp;Box</span></p>
+                <div class="bigbox-qty col-xs-4 col-sm-4 col-md-4 col-lg-2">
+                  <p class="boxing-type hidden-xs"><span>42 er<span><span>&nbsp;Box</span></p>
                   <form class='qty-form big' method='POST' action='#'>
                       <input type='button' value='-' class='qtyminus' field='quantity' />
                       <input type='text' name='quantity' value='0' class='qty' />
                       <input type='button' value='+' class='qtyplus' field='quantity' />
                   </form>
                 </div>
-                <div class="overview clearfix col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <div class="overview-selected">
-                    <span class="selected-qty">2</span>
-                    <span>x Lento (10er)</span>
+                <div class="overview clearfix hidden-xs col-xs-12 col-sm-4 col-md-4 col-lg-2">
+                  <div class="first-subtotal">
+                    <div class="overview-selected">
+                      <span class="selected-qty">2</span>
+                      <span>x Presto (10er)</span>
+                    </div>
+                    <div class="overview-total">
+                      <span> = </span>
+                      <span class="row-total">7.50</span>
+                    </div>
                   </div>
-                  <div class="overview-total">
-                    <span> = </span>
-                    <span class="row-total">7.50</span>
+                  <div class="second-subtotal">
+                    <div class="overview-selected">
+                      <span class="selected-qty">2</span>
+                      <span>x Presto (42er)</span>
+                    </div>
+                    <div class="overview-total">
+                      <span> = </span>
+                      <span class="row-total">7.50</span>
+                    </div>
                   </div>
                 </div>
               </div> <!-- /. product row -->
@@ -399,30 +527,42 @@
                     <div class="product-title"> Fortis </div>
                   </div>
                 </div>
-                <div class="smallbox-qty col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <p class="boxing-type"><span>10 er<span><span>&nbsp;Box</span></p>
+                <div class="smallbox-qty col-xs-4 col-sm-4 col-md-4 col-lg-2">
+                  <p class="boxing-type hidden-xs"><span>10 er<span><span>&nbsp;Box</span></p>
                   <form class='qty-form' method='POST' action='#'>
                       <input type='button' value='-' class='qtyminus' field='quantity' />
                       <input type='text' name='quantity' value='0' class='qty' />
                       <input type='button' value='+' class='qtyplus' field='quantity' />
                   </form>
                 </div>
-                <div class="bigbox-qty col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <p class="boxing-type"><span>42 er<span><span>&nbsp;Box</span></p>
+                <div class="bigbox-qty col-xs-4 col-sm-4 col-md-4 col-lg-2">
+                  <p class="boxing-type hidden-xs"><span>42 er<span><span>&nbsp;Box</span></p>
                   <form class='qty-form big' method='POST' action='#'>
                       <input type='button' value='-' class='qtyminus' field='quantity' />
                       <input type='text' name='quantity' value='0' class='qty' />
                       <input type='button' value='+' class='qtyplus' field='quantity' />
                   </form>
                 </div>
-                <div class="overview clearfix col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <div class="overview-selected">
-                    <span class="selected-qty">2</span>
-                    <span>x Lento (10er)</span>
+                <div class="overview clearfix hidden-xs col-xs-12 col-sm-4 col-md-4 col-lg-2">
+                  <div class="first-subtotal">
+                    <div class="overview-selected">
+                      <span class="selected-qty">2</span>
+                      <span>x Fortis (10er)</span>
+                    </div>
+                    <div class="overview-total">
+                      <span> = </span>
+                      <span class="row-total">7.50</span>
+                    </div>
                   </div>
-                  <div class="overview-total">
-                    <span> = </span>
-                    <span class="row-total">7.50</span>
+                  <div class="second-subtotal">
+                    <div class="overview-selected">
+                      <span class="selected-qty">2</span>
+                      <span>x Fortis (42er)</span>
+                    </div>
+                    <div class="overview-total">
+                      <span> = </span>
+                      <span class="row-total">7.50</span>
+                    </div>
                   </div>
                 </div>
               </div> <!-- /. product row -->
@@ -436,30 +576,32 @@
                     <div class="product-title"> Mix </div>
                   </div>
                 </div>
-                <div class="smallbox-qty col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <p class="boxing-type"><span>10 er<span><span>&nbsp;Box</span></p>
+                <div class="smallbox-qty col-xs-4 col-sm-4 col-md-4 col-lg-2">
+                  <!-- <p class="boxing-type hidden-xs"><span>10 er<span><span>&nbsp;Box</span></p>
                   <form class='qty-form' method='POST' action='#'>
                       <input type='button' value='-' class='qtyminus' field='quantity' />
                       <input type='text' name='quantity' value='0' class='qty' />
                       <input type='button' value='+' class='qtyplus' field='quantity' />
-                  </form>
+                  </form> -->
                 </div>
-                <div class="bigbox-qty col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <p class="boxing-type"><span>42 er<span><span>&nbsp;Box</span></p>
+                <div class="bigbox-qty col-xs-4 col-sm-4 col-md-4 col-lg-2">
+                  <p class="boxing-type hidden-xs"><span>42 er<span><span>&nbsp;Box</span></p>
                   <form class='qty-form big' method='POST' action='#'>
                       <input type='button' value='-' class='qtyminus' field='quantity' />
                       <input type='text' name='quantity' value='0' class='qty' />
                       <input type='button' value='+' class='qtyplus' field='quantity' />
                   </form>
                 </div>
-                <div class="overview clearfix col-xs-12 col-sm-4 col-md-4 col-lg-2">
-                  <div class="overview-selected">
-                    <span class="selected-qty">2</span>
-                    <span>x Lento (10er)</span>
-                  </div>
-                  <div class="overview-total">
-                    <span> = </span>
-                    <span class="row-total">7.50</span>
+                <div class="overview clearfix hidden-xs col-xs-12 col-sm-4 col-md-4 col-lg-2">
+                  <div class="second-subtotal mix-subtotal">
+                    <div class="overview-selected">
+                      <span class="selected-qty">2</span>
+                      <span>x Mix (42er)</span>
+                    </div>
+                    <div class="overview-total">
+                      <span> = </span>
+                      <span class="row-total">7.50</span>
+                    </div>
                   </div>
                 </div>
               </div> <!-- /. product row -->
@@ -469,7 +611,8 @@
             </div> <!-- selection -->
 
             <div class="cart-total col-xs-12 col-sm-12 col-md-12 col-lg-2">
-              <p class="cart-total-title"> Dein Warenkorb </p>
+              <p class="header-big-title"> Dein Warenkorb </p>
+              <p class="header-small-title">Angabe in Euro</p>
               <p class="cart-total-content clearfix">
                 <span class="col1"> Zwischensumme </span>
                 <span class="col2"> = 30.00 </span>
